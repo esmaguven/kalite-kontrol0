@@ -547,7 +547,76 @@ function toast(msg, type='', dur=2800) {
   clearTimeout(_toastT);
   _toastT = setTimeout(() => el.classList.remove('show'), dur);
 }
+// FILL — form
+function initFill() {
+  _fillGrpSel('f-group', null);
+  // Grupsuz şablonlar için özel seçenek ekle
+  document.getElementById('f-group').insertAdjacentHTML('beforeend', '<option value="__none__">Grupsuz / Silinmiş Gruplar</option>');
+  
+  document.getElementById('f-tmpl').innerHTML = '<option value="">— Önce grup seçin —</option>';
+  document.getElementById('f-tmpl').disabled = true;
+  
+  if (typeof _editSessId === 'undefined' || !_editSessId) {
+    document.getElementById('f-chassis').value = '';
+    document.getElementById('f-customer').value = '';
+    document.getElementById('f-order').value = '';
+    document.getElementById('f-location').value = '';
+    document.getElementById('f-note').value = '';
+    if (typeof _selOps !== 'undefined') { _selOps = []; _renderChips(); }
+  }
+  document.getElementById('fill-select-sec').style.display = '';
+  document.getElementById('fill-form-sec').style.display = 'none';
+  if(document.getElementById('fill-banner')) document.getElementById('fill-banner').style.display = 'none';
+}
 
+function onGrpChange() {
+  const gId = document.getElementById('f-group').value;
+  const sel = document.getElementById('f-tmpl');
+  let tmpls = [];
+  
+  if (gId === '__none__') {
+    tmpls = ST.templates.filter(t => !t.groupId);
+  } else if (gId) {
+    tmpls = ST.templates.filter(t => t.groupId === gId);
+  }
+  
+  sel.innerHTML = '<option value="">— Şablon seçin —</option>' + 
+    tmpls.map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join('');
+  sel.disabled = !gId;
+}
+  function startFillFromSession(tmplId, chassis) {
+  const t = ST.templates.find(x => x.id === tmplId); 
+  if(!t) return;
+  goto('fill');
+  document.getElementById('f-group').value = t.groupId || '__none__';
+  onGrpChange();
+  document.getElementById('f-tmpl').value = tmplId;
+  if (chassis) document.getElementById('f-chassis').value = chassis;
+  toast('✏️ Şablon ve şasi seçildi', 'info');
+}
+
+function editSession(id) {
+  const s = ST.sessions.find(x => x.id === id); 
+  if(!s) return;
+  const t = ST.templates.find(x => x.id === s.templateId);
+  if (!t) { toast('⚠️ Şablon bulunamadı', 'err'); return; }
+  
+  _editSessId = id;
+  _selOps = [...(s.operatorIds || (s.operatorId ? [s.operatorId] : []))];
+  
+  document.getElementById('f-customer').value = s.customer || '';
+  document.getElementById('f-order').value = s.order || '';
+  document.getElementById('f-location').value = s.location || '';
+  document.getElementById('f-note').value = s.note || '';
+  document.getElementById('f-chassis').value = s.chassis || '';
+  
+  goto('fill');
+  document.getElementById('f-group').value = t.groupId || '__none__';
+  onGrpChange();
+  document.getElementById('f-tmpl').value = s.templateId;
+  if(typeof _renderChips === 'function') _renderChips();
+  toast('✏️ Düzenleme modu aktif', 'info');
+}
 // ============================================================
 // NAV
 // ============================================================
