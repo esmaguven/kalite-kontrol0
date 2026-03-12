@@ -523,6 +523,9 @@ async function loadAll() {
   document.getElementById('loading-overlay').style.display = 'none';
   renderDashboard();
 }
+  // STATE bölümüne ekleyin
+let _editSessId = null; 
+let _selOps = [];
 
 // ============================================================
 // UTILS
@@ -550,20 +553,27 @@ function toast(msg, type='', dur=2800) {
 // FILL — form
 function initFill() {
   _fillGrpSel('f-group', null);
-  // Grupsuz şablonlar için özel seçenek ekle
-  document.getElementById('f-group').insertAdjacentHTML('beforeend', '<option value="__none__">Grupsuz / Silinmiş Gruplar</option>');
   
+  // Grupsuz şablonlar için seçenek ekle
+  const grpSel = document.getElementById('f-group');
+  if (grpSel) {
+    grpSel.insertAdjacentHTML('beforeend', '<option value="__none__">Grupsuz / Silinmiş Gruplar</option>');
+  }
+
   document.getElementById('f-tmpl').innerHTML = '<option value="">— Önce grup seçin —</option>';
   document.getElementById('f-tmpl').disabled = true;
-  
+
+  // Hatanın çözümü: _editSessId kontrolü
   if (typeof _editSessId === 'undefined' || !_editSessId) {
     document.getElementById('f-chassis').value = '';
     document.getElementById('f-customer').value = '';
     document.getElementById('f-order').value = '';
     document.getElementById('f-location').value = '';
     document.getElementById('f-note').value = '';
-    if (typeof _selOps !== 'undefined') { _selOps = []; _renderChips(); }
+    _selOps = []; 
+    if (typeof _renderChips === 'function') _renderChips();
   }
+  
   document.getElementById('fill-select-sec').style.display = '';
   document.getElementById('fill-form-sec').style.display = 'none';
   if(document.getElementById('fill-banner')) document.getElementById('fill-banner').style.display = 'none';
@@ -599,9 +609,9 @@ function editSession(id) {
   const s = ST.sessions.find(x => x.id === id); 
   if(!s) return;
   const t = ST.templates.find(x => x.id === s.templateId);
-  if (!t) { toast('⚠️ Şablon bulunamadı', 'err'); return; }
   
   _editSessId = id;
+  // Operatör kaydının gitmemesini sağlayan satır:
   _selOps = [...(s.operatorIds || (s.operatorId ? [s.operatorId] : []))];
   
   document.getElementById('f-customer').value = s.customer || '';
@@ -611,10 +621,15 @@ function editSession(id) {
   document.getElementById('f-chassis').value = s.chassis || '';
   
   goto('fill');
-  document.getElementById('f-group').value = t.groupId || '__none__';
-  onGrpChange();
-  document.getElementById('f-tmpl').value = s.templateId;
-  if(typeof _renderChips === 'function') _renderChips();
+  
+  // Grup ve şablonu geri yükle
+  if(t) {
+    document.getElementById('f-group').value = t.groupId || '__none__';
+    onGrpChange();
+    document.getElementById('f-tmpl').value = s.templateId;
+  }
+  
+  _renderChips(); // Operatörleri ekranda göster
   toast('✏️ Düzenleme modu aktif', 'info');
 }
 // ============================================================
