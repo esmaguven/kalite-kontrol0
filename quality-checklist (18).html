@@ -1,0 +1,2643 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalite Kontrol Sistemi</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+  /* ── DESIGN TOKENS ─────────────────────────────────────── */
+  :root {
+    --primary:      #0f2056;
+    --primary-dark: #0a1840;
+    --primary-mid:  #1a3a7a;
+    --accent:       #2962aa;
+    --success:      #057a55;
+    --warning:      #c27803;
+    --danger:       #c81e1e;
+    --bg:           #eef1f8;
+    --card:         #ffffff;
+    --border:       #dde3ef;
+    --text:         #0f172a;
+    --muted:        #64748b;
+    --radius:       12px;
+    --shadow-sm:    0 1px 4px rgba(15,32,86,.08);
+    --shadow-md:    0 4px 16px rgba(15,32,86,.12);
+    --shadow-lg:    0 8px 32px rgba(15,32,86,.16);
+    --glass-bg:     rgba(255,255,255,.72);
+    --glass-border: rgba(255,255,255,.55);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse at 20% 0%, rgba(41,98,170,.10) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 100%, rgba(15,32,86,.08) 0%, transparent 60%);
+    background-attachment: fixed;
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* ── NAV ────────────────────────────────────────────────── */
+  nav {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+    color: white;
+    padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 58px;
+    box-shadow: 0 2px 20px rgba(15,32,86,.35);
+    position: sticky; top: 0; z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+  nav::after {
+    content:''; position:absolute; bottom:0; left:0; right:0;
+    height:2px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent);
+  }
+  nav .brand {
+    font-weight: 800; font-size: 1rem; letter-spacing: .4px;
+    background: linear-gradient(90deg, #fff 60%, rgba(255,255,255,.7));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  nav .nav-tabs { display: flex; gap: 4px; }
+  nav .nav-tab {
+    background: transparent; border: none;
+    color: rgba(255,255,255,.7);
+    padding: 8px 15px; border-radius: 8px;
+    cursor: pointer; font-size: .84rem; font-weight: 500;
+    transition: all .2s;
+    position: relative;
+  }
+  nav .nav-tab:hover { background: rgba(255,255,255,.13); color: white; }
+  nav .nav-tab.active {
+    background: rgba(255,255,255,.18);
+    color: white; font-weight: 700;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.2);
+  }
+
+  /* ── HAMBURGER ──────────────────────────────────────────── */
+  #hamburger-btn {
+    display:none; background:none; border:none; cursor:pointer;
+    padding:7px; border-radius:8px; transition: background .15s;
+  }
+  #hamburger-btn:hover { background: rgba(255,255,255,.15); }
+  #hamburger-btn span {
+    display:block; width:22px; height:2px; background:white;
+    border-radius:2px; margin:5px 0; transition: all .25s;
+  }
+  #hamburger-btn.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  #hamburger-btn.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
+  #hamburger-btn.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  #mobile-menu {
+    display:none; position:fixed; top:58px; left:0; right:0; z-index:99;
+    background: linear-gradient(160deg, var(--primary) 0%, var(--primary-mid) 100%);
+    box-shadow: 0 12px 32px rgba(0,0,0,.3);
+    flex-direction:column; padding:8px 12px 14px;
+    animation: menuSlide .22s cubic-bezier(.4,0,.2,1);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  #mobile-menu.open { display:flex; }
+  @keyframes menuSlide { from{opacity:0;transform:translateY(-10px)} to{opacity:1;transform:translateY(0)} }
+  #mobile-menu .m-tab {
+    background:none; border:none; color:rgba(255,255,255,.82); text-align:left;
+    padding:13px 14px; font-size:.93rem; font-weight:500; cursor:pointer;
+    border-radius:9px; transition: all .15s;
+    display:flex; align-items:center; gap:12px;
+  }
+  #mobile-menu .m-tab:hover { background:rgba(255,255,255,.12); color:white; }
+  #mobile-menu .m-tab.active {
+    background:rgba(255,255,255,.18); color:white; font-weight:700;
+  }
+  #mobile-menu .m-tab .m-icon { font-size:1.1rem; width:24px; text-align:center; }
+  #mobile-menu hr { border:none; border-top:1px solid rgba(255,255,255,.1); margin:4px 0; }
+  #menu-overlay { display:none; position:fixed; inset:0; top:58px; z-index:98; }
+  #menu-overlay.open { display:block; }
+
+  /* ── PAGES ──────────────────────────────────────────────── */
+  .page { display:none; padding:28px 22px; max-width:920px; margin:0 auto; }
+  .page.active {
+    display:block;
+    animation: pageIn .28s cubic-bezier(.4,0,.2,1);
+  }
+  @keyframes pageIn {
+    from { opacity:0; transform:translateY(12px) scale(.995); }
+    to   { opacity:1; transform:translateY(0)    scale(1); }
+  }
+
+  /* ── CARDS ──────────────────────────────────────────────── */
+  .card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    padding: 22px;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow .2s, transform .2s;
+  }
+  .card:hover { box-shadow: var(--shadow-md); }
+  .card-title {
+    font-size: 1rem; font-weight: 700; margin-bottom: 16px;
+    color: var(--primary);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .card-title::before {
+    content:''; display:inline-block; width:3px; height:16px;
+    background: linear-gradient(180deg, var(--accent), var(--primary));
+    border-radius:2px;
+  }
+
+  /* ── BUTTONS ────────────────────────────────────────────── */
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 9px 16px; border-radius: 8px; border: none;
+    cursor: pointer; font-size: .84rem; font-weight: 600;
+    transition: all .2s cubic-bezier(.4,0,.2,1);
+    text-decoration: none; letter-spacing: .2px;
+    position: relative; overflow: hidden;
+  }
+  .btn::after {
+    content:''; position:absolute; inset:0; opacity:0;
+    background: rgba(255,255,255,.15);
+    transition: opacity .15s;
+  }
+  .btn:hover::after { opacity:1; }
+  .btn:active { transform: scale(.96); }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+    color: white;
+    box-shadow: 0 2px 8px rgba(15,32,86,.25);
+  }
+  .btn-primary:hover { box-shadow: 0 4px 14px rgba(15,32,86,.35); transform: translateY(-1px); }
+
+  .btn-success { background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; }
+  .btn-success:hover { background: #a7f3d0; transform: translateY(-1px); }
+
+  .btn-danger { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+  .btn-danger:hover { background: #fecaca; transform: translateY(-1px); }
+
+  .btn-warning { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+  .btn-warning:hover { background: #fde68a; transform: translateY(-1px); }
+
+  .btn-ghost {
+    background: rgba(255,255,255,.7); color: var(--muted);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(4px);
+  }
+  .btn-ghost:hover { background: white; color: var(--text); transform: translateY(-1px); }
+
+  .btn-sm { padding: 5px 11px; font-size: .78rem; }
+  .btn:disabled { opacity:.45; cursor:not-allowed; transform:none !important; }
+
+  /* ── INPUTS ─────────────────────────────────────────────── */
+  input[type=text], input[type=email], textarea, select {
+    width: 100%; padding: 10px 13px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-size: .9rem; font-family: inherit;
+    color: var(--text);
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(4px);
+    transition: border-color .18s, box-shadow .18s;
+    outline: none;
+  }
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(41,98,170,.12);
+    background: white;
+  }
+  label { display:block; font-size:.82rem; font-weight:600; color:var(--muted); margin-bottom:5px; }
+  .form-group { margin-bottom: 15px; }
+
+  /* ── BADGE ──────────────────────────────────────────────── */
+  .badge {
+    display:inline-block; padding:3px 10px;
+    border-radius:99px; font-size:.71rem; font-weight:700;
+    letter-spacing:.3px;
+  }
+  .badge-draft { background:#dbeafe; color:#1e40af; }
+  .badge-final { background:#d1fae5; color:#065f46; }
+
+  /* ── TEMPLATE LIST ──────────────────────────────────────── */
+  .template-item {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 18px; border-radius:10px;
+    border: 1.5px solid var(--border);
+    margin-bottom:9px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    transition: all .22s cubic-bezier(.4,0,.2,1);
+    box-shadow: var(--shadow-sm);
+  }
+  .template-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: rgba(41,98,170,.3);
+  }
+  .template-item-left { display:flex; align-items:center; gap:10px; }
+  .template-item-name { font-weight:700; font-size:.9rem; color:var(--primary); }
+  .template-item-meta { font-size:.75rem; color:var(--muted); margin-top:2px; }
+  .template-actions { display:flex; gap:6px; flex-wrap:wrap; }
+
+  /* ── CHECKLIST EDITOR ───────────────────────────────────── */
+  .item-row {
+    display:flex; align-items:center; gap:8px;
+    padding:9px 12px; border:1.5px solid var(--border);
+    border-radius:9px; margin-bottom:7px;
+    background: rgba(255,255,255,.8);
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .item-row:focus-within {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(41,98,170,.08);
+  }
+  .item-row .item-num { font-size:.78rem; color:var(--muted); min-width:22px; font-weight:600; }
+  .item-row input { flex:1; border:none; padding:4px 6px; font-size:.88rem; background:transparent; }
+  .item-row input:focus { box-shadow:none; border-bottom:2px solid var(--accent); border-radius:0; }
+  .item-row .drag-handle { color:var(--muted); cursor:grab; font-size:1rem; }
+
+  /* ── FILL CHECKLIST ─────────────────────────────────────── */
+  .fill-item {
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    transition: border-color .2s, box-shadow .2s;
+    box-shadow: var(--shadow-sm);
+  }
+  .fill-item-header { display:flex; gap:10px; align-items:flex-start; margin-bottom:11px; }
+  .fill-item-num { font-size:.76rem; font-weight:800; color:var(--accent); min-width:24px; margin-top:2px; }
+  .fill-item-text { font-size:.92rem; font-weight:500; line-height:1.5; }
+
+  .radio-group { display:flex; gap:8px; flex-wrap:wrap; }
+  .radio-opt {
+    display:flex; align-items:center; gap:6px; cursor:pointer;
+    padding:7px 13px; border-radius:8px;
+    border: 1.5px solid var(--border);
+    font-size:.82rem; font-weight:600;
+    transition: all .18s cubic-bezier(.4,0,.2,1);
+    user-select:none;
+    background: rgba(255,255,255,.6);
+  }
+  .radio-opt:hover { transform:translateY(-1px); box-shadow: var(--shadow-sm); }
+  .radio-opt input { display:none; }
+  .radio-opt.ok { color:var(--success); }
+  .radio-opt.ok.selected { background:#d1fae5; border-color:#34d399; box-shadow:0 0 0 3px rgba(52,211,153,.12); }
+  .radio-opt.nok { color:var(--danger); }
+  .radio-opt.nok.selected { background:#fee2e2; border-color:#f87171; box-shadow:0 0 0 3px rgba(248,113,113,.12); }
+  .radio-opt.dev { color:var(--warning); }
+  .radio-opt.dev.selected { background:#fef3c7; border-color:#fbbf24; box-shadow:0 0 0 3px rgba(251,191,36,.12); }
+
+  .reason-box { margin-top:11px; }
+  .reason-box textarea { resize:vertical; min-height:64px; }
+
+  /* Fill item answer states */
+  .fill-item.answered-ok  { border-color:#34d399; box-shadow:0 0 0 2px rgba(52,211,153,.1); }
+  .fill-item.answered-nok { border-color:#f87171; box-shadow:0 0 0 2px rgba(248,113,113,.1); }
+  .fill-item.answered-dev { border-color:#fbbf24; box-shadow:0 0 0 2px rgba(251,191,36,.1); }
+  .fill-item.unanswered   { border-color:#fbbf24; background:rgba(255,251,235,.6); }
+
+  /* ── SESSIONS LIST ──────────────────────────────────────── */
+  .session-item {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:13px 18px; border-radius:10px;
+    border: 1.5px solid var(--border);
+    margin-bottom:9px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    transition: all .22s cubic-bezier(.4,0,.2,1);
+    box-shadow: var(--shadow-sm);
+  }
+  .session-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: rgba(41,98,170,.25);
+  }
+  .session-meta { font-size:.75rem; color:var(--muted); margin-top:3px; }
+
+  /* ── MODAL ──────────────────────────────────────────────── */
+  .modal-overlay {
+    display:none; position:fixed; inset:0;
+    background:rgba(15,32,86,.45);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index:200; align-items:center; justify-content:center; padding:16px;
+  }
+  .modal-overlay.open {
+    display:flex;
+    animation: modalIn .22s cubic-bezier(.4,0,.2,1);
+  }
+  @keyframes modalIn {
+    from { opacity:0; transform:scale(.96); }
+    to   { opacity:1; transform:scale(1); }
+  }
+  .modal {
+    background: white;
+    border-radius: 16px;
+    width:100%; max-width:560px; max-height:85vh; overflow-y:auto;
+    box-shadow: 0 24px 64px rgba(15,32,86,.28);
+    border: 1px solid rgba(255,255,255,.5);
+  }
+  .modal-header { padding:20px 22px 0; display:flex; justify-content:space-between; align-items:center; }
+  .modal-title { font-size:1rem; font-weight:800; color:var(--primary); }
+  .modal-close {
+    background:rgba(100,116,139,.1); border:none;
+    width:30px; height:30px; border-radius:50%;
+    font-size:1.2rem; cursor:pointer; color:var(--muted);
+    display:flex; align-items:center; justify-content:center;
+    transition: background .15s;
+  }
+  .modal-close:hover { background:rgba(100,116,139,.2); }
+  .modal-body { padding:16px 22px 22px; }
+
+  /* ── STICKY FILL BANNER ─────────────────────────────────── */
+  #fill-banner {
+    display:none; position:sticky; top:58px; z-index:90;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+    color:white; padding:0 16px;
+    margin: 0 -22px 16px;
+    box-shadow: 0 4px 16px rgba(15,32,86,.25);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  #fill-banner .banner-inner {
+    max-width:920px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:10px; padding:10px 0; flex-wrap:wrap;
+  }
+  #fill-banner .banner-left { font-size:.83rem; line-height:1.5; }
+  #fill-banner .banner-title { font-weight:800; font-size:.9rem; }
+  #fill-banner .banner-meta  { opacity:.72; font-size:.75rem; }
+
+  /* ── PROGRESS BAR ───────────────────────────────────────── */
+  #fill-progress-wrap {
+    background:rgba(255,255,255,.18); border-radius:99px;
+    height:6px; width:140px; overflow:hidden; flex-shrink:0;
+  }
+  #fill-progress-bar {
+    height:100%; border-radius:99px;
+    background: linear-gradient(90deg,#34d399,#6ee7b7);
+    transition: width .35s cubic-bezier(.4,0,.2,1);
+    width:0%;
+    box-shadow: 0 0 8px rgba(52,211,153,.4);
+  }
+  #fill-progress-text { font-size:.74rem; opacity:.82; white-space:nowrap; }
+
+  /* ── AUTOSAVE DOT ───────────────────────────────────────── */
+  #autosave-dot {
+    display:inline-block; width:7px; height:7px; border-radius:50%;
+    background:#34d399; margin-left:6px; vertical-align:middle;
+    animation: pulse-dot 1.5s ease-in-out; opacity:0;
+  }
+  @keyframes pulse-dot { 0%{opacity:0;transform:scale(.5)} 30%{opacity:1;transform:scale(1.3)} 100%{opacity:0;transform:scale(1)} }
+
+  /* ── TOAST ──────────────────────────────────────────────── */
+  #toast {
+    position:fixed; bottom:28px; left:50%;
+    transform:translateX(-50%) translateY(12px);
+    background: rgba(15,23,42,.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color:white; padding:12px 22px; border-radius:12px;
+    font-size:.87rem; font-weight:600;
+    box-shadow: 0 8px 32px rgba(0,0,0,.3);
+    z-index:9999; opacity:0; pointer-events:none;
+    transition: opacity .22s, transform .22s;
+    max-width:88vw; text-align:center;
+    border: 1px solid rgba(255,255,255,.1);
+    border-left: 3px solid rgba(255,255,255,.3);
+    white-space: pre-wrap;
+  }
+  #toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+  #toast.toast-success { background:rgba(6,95,70,.92); border-left-color:#34d399; }
+  #toast.toast-error   { background:rgba(127,29,29,.92); border-left-color:#f87171; }
+  #toast.toast-info    { background:rgba(15,32,86,.92); border-left-color:#60a5fa; }
+
+  /* ── PDF PREVIEW TABLE ──────────────────────────────────── */
+  #pdf-preview { display:none; }
+  table.preview-table { width:100%; border-collapse:collapse; font-size:.82rem; }
+  table.preview-table th, table.preview-table td { border:1px solid #dde3ef; padding:8px 10px; text-align:left; }
+  table.preview-table th { background:#f0f4ff; font-weight:700; color:var(--primary); }
+
+  /* ── MAIL TAG ───────────────────────────────────────────── */
+  .mail-tag { display:inline-flex; align-items:center; gap:5px; background:#e5edff; color:var(--primary); padding:4px 10px; border-radius:99px; font-size:.8rem; margin:3px; }
+  .mail-tag button { background:none; border:none; cursor:pointer; color:var(--primary-dark); font-size:1rem; line-height:1; }
+
+  /* ── UTILS ──────────────────────────────────────────────── */
+  .flex { display:flex; }
+  .gap-2 { gap:8px; }
+  .gap-3 { gap:12px; }
+  .mb-2 { margin-bottom:8px; }
+  .mb-3 { margin-bottom:12px; }
+  .mt-2 { margin-top:8px; }
+  .mt-3 { margin-top:12px; }
+  .text-muted { color:var(--muted); font-size:.82rem; }
+  .empty-state { text-align:center; padding:48px 20px; color:var(--muted); }
+  .empty-state .icon { font-size:2.8rem; margin-bottom:12px; opacity:.6; }
+  hr { border:none; border-top:1px solid var(--border); margin:16px 0; }
+
+  /* ── SESSION SEARCH ─────────────────────────────────────── */
+  #session-search { margin-bottom:12px; }
+
+  /* ── TEMPLATE HEADING ROW ───────────────────────────────── */
+  .heading-row {
+    display:flex; align-items:center; gap:8px;
+    padding:8px 12px; border-radius:9px; margin-bottom:7px;
+    background: linear-gradient(135deg,rgba(15,32,86,.07),rgba(41,98,170,.05));
+    border:1.5px solid rgba(41,98,170,.2);
+  }
+  .heading-row input {
+    flex:1; border:none; padding:4px 6px;
+    font-size:.9rem; font-weight:700; color:var(--primary);
+    background:transparent;
+  }
+  .heading-row input:focus { box-shadow:none; border-bottom:2px solid var(--accent); border-radius:0; }
+  .heading-row .heading-icon { font-size:.9rem; color:var(--accent); }
+
+  /* ── FILL HEADING ───────────────────────────────────────── */
+  .fill-heading {
+    padding:10px 16px; margin-bottom:10px; margin-top:6px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+    border-radius:9px; color:white;
+    font-weight:700; font-size:.9rem; letter-spacing:.3px;
+  }
+  .fill-heading:first-child { margin-top:0; }
+
+  /* ── OPERATOR CHIPS ─────────────────────────────────────── */
+  .op-chip {
+    display:inline-flex; align-items:center; gap:5px;
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    color:white; padding:4px 10px 4px 12px;
+    border-radius:99px; font-size:.78rem; font-weight:600;
+  }
+  .op-chip button {
+    background:rgba(255,255,255,.25); border:none; cursor:pointer;
+    color:white; width:16px; height:16px; border-radius:50%;
+    font-size:.7rem; display:flex; align-items:center; justify-content:center;
+    line-height:1; padding:0;
+  }
+  .op-chip button:hover { background:rgba(255,255,255,.4); }
+  .op-empty-hint { color:var(--muted); font-size:.82rem; align-self:center; }
+
+  .op-dropdown-item {
+    display:flex; align-items:center; gap:10px;
+    padding:10px 14px; cursor:pointer;
+    font-size:.85rem; transition:background .12s;
+    border-bottom:1px solid var(--border);
+  }
+  .op-dropdown-item:last-child { border-bottom:none; }
+  .op-dropdown-item:hover { background:#f0f4ff; }
+  .op-dropdown-item.selected { background:#e8f0fe; }
+  .op-dropdown-item .op-check { color:var(--accent); font-weight:700; width:16px; }
+
+  /* ── DRAG HANDLE ────────────────────────────────────────── */
+  .drag-handle { cursor:grab; color:var(--muted); font-size:1.1rem; padding:0 2px; touch-action:none; }
+  .drag-handle:active { cursor:grabbing; }
+  .item-row.dragging { opacity:.4; }
+  .item-row.drag-over { border-color:var(--accent); background:rgba(41,98,170,.07); }
+
+  /* ── DASHBOARD ──────────────────────────────────────────── */
+  .dash-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 60%, var(--accent) 100%);
+    border-radius: 16px;
+    padding: 32px 28px;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .dash-hero::before {
+    content:'';
+    position:absolute; top:-40px; right:-40px;
+    width:200px; height:200px;
+    background: rgba(255,255,255,.05);
+    border-radius:50%;
+  }
+  .dash-hero::after {
+    content:'';
+    position:absolute; bottom:-60px; right:60px;
+    width:150px; height:150px;
+    background: rgba(255,255,255,.04);
+    border-radius:50%;
+  }
+  .dash-hero-title {
+    font-size:1.4rem; font-weight:800; margin-bottom:6px;
+    letter-spacing: -.2px;
+  }
+  .dash-hero-sub {
+    font-size:.88rem; opacity:.78; margin-bottom:24px;
+  }
+  .dash-hero-btn {
+    display:inline-flex; align-items:center; gap:8px;
+    background:white; color:var(--primary);
+    padding:11px 22px; border-radius:10px;
+    font-weight:700; font-size:.9rem; border:none; cursor:pointer;
+    box-shadow: 0 4px 16px rgba(0,0,0,.2);
+    transition: all .2s;
+  }
+  .dash-hero-btn:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.25); }
+  .dash-hero-btn:active { transform:scale(.97); }
+
+  .stat-grid {
+    display:grid; grid-template-columns: repeat(2, 1fr);
+    gap:14px; margin-bottom:20px;
+  }
+  .stat-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius:14px;
+    padding:18px 20px;
+    box-shadow: var(--shadow-sm);
+    transition: all .22s cubic-bezier(.4,0,.2,1);
+    cursor:default;
+  }
+  .stat-card:hover { box-shadow:var(--shadow-md); transform:translateY(-2px); }
+  .stat-icon {
+    font-size:1.6rem; margin-bottom:10px;
+    display:block;
+  }
+  .stat-value {
+    font-size:2rem; font-weight:800; color:var(--primary);
+    line-height:1; margin-bottom:4px;
+  }
+  .stat-label {
+    font-size:.78rem; color:var(--muted); font-weight:500;
+  }
+  .stat-card.stat-green .stat-value  { color:#065f46; }
+  .stat-card.stat-blue  .stat-value  { color:var(--accent); }
+  .stat-card.stat-amber .stat-value  { color:#92400e; }
+
+  @media(max-width:480px) {
+    .stat-grid { grid-template-columns:1fr 1fr; gap:10px; }
+    .stat-value { font-size:1.6rem; }
+    .dash-hero { padding:24px 18px; }
+    .dash-hero-title { font-size:1.15rem; }
+  }
+
+  /* ── SCROLL BUTONLARI ───────────────────────────────────── */
+  #scroll-btns {
+    position: fixed; bottom: 24px; right: 20px; z-index: 500;
+    display: flex; flex-direction: column; gap: 8px;
+    opacity: 0; pointer-events: none;
+    transition: opacity .25s, transform .25s;
+    transform: translateY(10px);
+  }
+  #scroll-btns.visible {
+    opacity: 1; pointer-events: auto; transform: translateY(0);
+  }
+  .scroll-btn {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    color: white; border: none; cursor: pointer;
+    font-size: 1.2rem; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 16px rgba(15,32,86,.35);
+    transition: transform .2s;
+  }
+  .scroll-btn:hover  { transform: scale(1.1); }
+  .scroll-btn:active { transform: scale(.93); }
+
+  /* ── FILL HEADING ────────────────────────────────────────── */
+  .fill-heading { cursor: default; }
+
+  /* ── RESPONSIVE ─────────────────────────────────────────── */
+  @media(max-width:700px) {
+    nav .nav-tabs { display:none; }
+    #hamburger-btn { display:block; }
+    .page { padding:18px 14px; }
+    .template-actions { justify-content:flex-end; }
+    #fill-banner { margin:0 -14px 14px; }
+  }
+</style>
+</head>
+<body>
+<!-- LOADING OVERLAY — body'nin ilk elementi olmalı -->
+<div id="loading-overlay" style="display:none;position:fixed;inset:0;background:rgba(15,32,86,.82);z-index:99999;flex-direction:column;align-items:center;justify-content:center;gap:16px;">
+  <div style="width:44px;height:44px;border:4px solid rgba(255,255,255,.2);border-top-color:white;border-radius:50%;animation:spin .8s linear infinite;"></div>
+  <div style="color:white;font-size:.95rem;font-weight:600;">Veriler yükleniyor...</div>
+</div>
+
+<nav>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <button id="hamburger-btn" onclick="toggleMenu()" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="brand">⚙️ Kalite Kontrol</div>
+  </div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" data-page="dashboard" onclick="showPage('dashboard')">Ana Sayfa</button>
+    <button class="nav-tab" data-page="templates" onclick="showPage('templates')">Şablonlar</button>
+    <button class="nav-tab" data-page="operators" onclick="showPage('operators')">Operatörler</button>
+    <button class="nav-tab" data-page="fill" onclick="showPage('fill')">Doldur</button>
+    <button class="nav-tab" data-page="sessions" onclick="showPage('sessions')">Kayıtlar</button>
+    <button class="nav-tab" data-page="settings" onclick="showPage('settings')">Ayarlar</button>
+  </div>
+</nav>
+
+<!-- Mobile dropdown menu -->
+<div id="menu-overlay" onclick="closeMenu()"></div>
+<div id="mobile-menu">
+  <button class="m-tab active" data-page="dashboard" onclick="showPage('dashboard');closeMenu()">
+    <span class="m-icon">🏠</span> Ana Sayfa
+  </button>
+  <button class="m-tab" data-page="templates" onclick="showPage('templates');closeMenu()">
+    <span class="m-icon">📋</span> Şablonlar
+  </button>
+  <button class="m-tab" data-page="operators" onclick="showPage('operators');closeMenu()">
+    <span class="m-icon">👷</span> Operatörler
+  </button>
+  <hr>
+  <button class="m-tab" data-page="fill" onclick="showPage('fill');closeMenu()">
+    <span class="m-icon">✏️</span> Doldur
+  </button>
+  <button class="m-tab" data-page="sessions" onclick="showPage('sessions');closeMenu()">
+    <span class="m-icon">📂</span> Kayıtlar
+  </button>
+  <hr>
+  <button class="m-tab" data-page="settings" onclick="showPage('settings');closeMenu()">
+    <span class="m-icon">⚙️</span> Ayarlar
+  </button>
+</div>
+
+<!-- ===== DASHBOARD PAGE ===== -->
+<div id="page-dashboard" class="page active">
+  <!-- Hero -->
+  <div class="dash-hero">
+    <div class="dash-hero-title">⚙️ Kalite Kontrol Sistemi</div>
+    <div class="dash-hero-sub">Koluman Otomotiv Endüstri A.Ş.</div>
+    <button class="dash-hero-btn" onclick="showPage('fill')">
+      ✏️ Yeni Kontrol Başlat
+    </button>
+  </div>
+
+  <!-- İstatistik kartları -->
+  <div class="stat-grid">
+    <div class="stat-card">
+      <span class="stat-icon">📋</span>
+      <div class="stat-value" id="stat-total">—</div>
+      <div class="stat-label">Toplam Kayıt</div>
+    </div>
+    <div class="stat-card stat-green">
+      <span class="stat-icon">✅</span>
+      <div class="stat-value" id="stat-final">—</div>
+      <div class="stat-label">Tamamlanan</div>
+    </div>
+    <div class="stat-card stat-amber">
+      <span class="stat-icon">📝</span>
+      <div class="stat-value" id="stat-draft">—</div>
+      <div class="stat-label">Taslak</div>
+    </div>
+    <div class="stat-card stat-blue">
+      <span class="stat-icon">📅</span>
+      <div class="stat-value" id="stat-today">—</div>
+      <div class="stat-label">Bugün</div>
+    </div>
+  </div>
+
+  <!-- Hızlı linkler -->
+  <div class="card" style="margin-bottom:0;">
+    <div class="card-title">Hızlı Erişim</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <button class="btn btn-ghost" onclick="showPage('sessions')" style="justify-content:center;padding:14px;">
+        📂 Kayıtlar
+      </button>
+      <button class="btn btn-ghost" onclick="showPage('templates')" style="justify-content:center;padding:14px;">
+        📋 Şablonlar
+      </button>
+      <button class="btn btn-ghost" onclick="showPage('operators')" style="justify-content:center;padding:14px;">
+        👷 Operatörler
+      </button>
+      <button class="btn btn-ghost" onclick="showPage('settings')" style="justify-content:center;padding:14px;">
+        ⚙️ Ayarlar
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TEMPLATES PAGE ===== -->
+<div id="page-templates" class="page">
+  <div class="flex gap-2 mb-3" style="justify-content:space-between;align-items:center;">
+    <h2 style="font-size:1.1rem;font-weight:700;">Checklist Şablonları</h2>
+    <button class="btn btn-primary" onclick="openTemplateModal()">+ Yeni Şablon</button>
+  </div>
+  <div id="templates-list"></div>
+</div>
+
+<!-- ===== OPERATORS PAGE ===== -->
+<div id="page-operators" class="page">
+  <div class="flex gap-2 mb-3" style="justify-content:space-between;align-items:center;">
+    <h2 style="font-size:1.1rem;font-weight:700;">Operatörler</h2>
+    <button class="btn btn-primary" onclick="openOperatorModal()">+ Yeni Operatör</button>
+  </div>
+  <div id="operators-list"></div>
+</div>
+
+<!-- ===== OPERATOR MODAL ===== -->
+<div class="modal-overlay" id="operator-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="omodal-title">Yeni Operatör</div>
+      <button class="modal-close" onclick="closeOperatorModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>Sicil Numarası *</label>
+        <input type="text" id="omodal-sicil" placeholder="örn. 00142">
+      </div>
+      <div class="form-group">
+        <label>Ad *</label>
+        <input type="text" id="omodal-name" placeholder="Adı">
+      </div>
+      <div class="form-group">
+        <label>Soyad *</label>
+        <input type="text" id="omodal-surname" placeholder="Soyadı">
+      </div>
+      <hr>
+      <div class="flex gap-2" style="justify-content:flex-end;">
+        <button class="btn btn-ghost" onclick="closeOperatorModal()">İptal</button>
+        <button class="btn btn-primary" onclick="saveOperator()">Kaydet</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="page-fill" class="page">
+  <div id="fill-select-section">
+    <div class="card">
+      <div class="card-title">Checklist Seç</div>
+      <div class="form-group">
+        <label>Kontrol Grubu *</label>
+        <select id="fill-group-select" onchange="onFillGroupChange()">
+          <option value="">-- Kontrol grubu seçin --</option>
+        </select>
+        <div id="group-warning" style="display:none;color:#c81e1e;font-size:.8rem;margin-top:4px;">⚠️ Kontrol grubu seçimi zorunludur.</div>
+      </div>
+      <div class="form-group">
+        <label>Şablon *</label>
+        <select id="fill-template-select" onchange="loadFillTemplate()">
+          <option value="">-- Önce grup seçin --</option>
+        </select>
+        <div id="template-warning" style="display:none;color:#c81e1e;font-size:.8rem;margin-top:4px;">⚠️ Şablon seçimi zorunludur.</div>
+      </div>
+      <div class="form-group">
+        <label>Operatörler * <span style="font-weight:400;color:var(--muted);font-size:.78rem;">(birden fazla seçilebilir)</span></label>
+        <div id="operator-chips" style="display:flex;flex-wrap:wrap;gap:6px;min-height:36px;padding:8px;border:1.5px solid var(--border);border-radius:8px;background:rgba(255,255,255,.85);cursor:pointer;" onclick="toggleOperatorDropdown()"></div>
+        <div id="operator-dropdown" style="display:none;border:1.5px solid var(--accent);border-radius:8px;background:white;box-shadow:0 8px 24px rgba(15,32,86,.15);max-height:220px;overflow-y:auto;margin-top:4px;z-index:50;position:relative;">
+          <div id="operator-dropdown-list"></div>
+        </div>
+        <div id="operator-warning" style="display:none;color:#c81e1e;font-size:.8rem;margin-top:4px;">⚠️ En az bir operatör seçin.</div>
+      </div>
+      <div class="form-group">
+        <label>Şasi Numarası *</label>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <input type="text" id="fill-chassis" placeholder="örn. NM0LS7F20P1234567" style="text-transform:uppercase;letter-spacing:.5px;flex:1;">
+          <button type="button" class="btn btn-primary" onclick="openScanner()" title="Barkod Okut" style="padding:9px 13px;flex-shrink:0;font-size:1.1rem;">
+            📷
+          </button>
+        </div>
+        <div id="chassis-warning" style="display:none;color:#c81e1e;font-size:.8rem;margin-top:4px;">⚠️ Şasi numarası zorunludur, devam etmek için lütfen girin.</div>
+      </div>
+      <hr>
+      <div class="card-title" style="margin-bottom:10px;font-size:.9rem;">Ek Bilgiler <span style="font-weight:400;color:var(--muted);font-size:.8rem;">(opsiyonel)</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;" class="extra-fields-grid">
+        <div class="form-group" style="margin-bottom:0;">
+          <label>Müşteri / Firma</label>
+          <input type="text" id="fill-customer" placeholder="Müşteri adı">
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label>Sipariş / İş Emri No</label>
+          <input type="text" id="fill-order" placeholder="örn. IE-2024-001">
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label>Kontrol Yeri / İstasyon</label>
+          <input type="text" id="fill-location" placeholder="örn. Hat-3, İstasyon-5">
+        </div>
+      </div>
+      <div class="form-group mt-2">
+        <label>Genel Not</label>
+        <input type="text" id="fill-note" placeholder="Ek açıklama...">
+      </div>
+      <style>@media(max-width:500px){.extra-fields-grid{grid-template-columns:1fr!important;}}</style>
+      <button class="btn btn-primary" onclick="startFill()" ontouchend="event.preventDefault();startFill()">Başla →</button>
+    </div>
+  </div>
+
+  <!-- Sticky banner -->
+  <div id="fill-banner">
+    <div class="banner-inner">
+      <div class="banner-left">
+        <div class="banner-title" id="fill-title"></div>
+        <div class="banner-meta" id="fill-info"></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <span id="fill-progress-text" style="font-size:.75rem;opacity:.85;">0 / 0</span>
+            <span id="autosave-dot"></span>
+          </div>
+          <div id="fill-progress-wrap"><div id="fill-progress-bar"></div></div>
+        </div>
+        <div class="flex gap-2">
+          <button class="btn btn-ghost btn-sm" style="color:white;border-color:rgba(255,255,255,.35);" onclick="cancelFill()">← Geri</button>
+          <button class="btn btn-success btn-sm" onclick="saveAsFinal()">✅ Kaydet</button>
+          <button class="btn btn-ghost btn-sm" style="color:white;border-color:rgba(255,255,255,.35);" onclick="saveAsDraft()">📋 Taslak</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fill-form-section" style="display:none;">
+    <div id="fill-items-container"></div>
+    <div style="margin-top:20px;background:#f8fafc;border:1px solid var(--border);border-radius:10px;padding:16px;">
+      <div style="font-size:.8rem;color:var(--muted);margin-bottom:10px;font-weight:500;">Formu kaydet:</div>
+      <div class="flex gap-2" style="flex-wrap:wrap;">
+        <button class="btn btn-primary" onclick="saveAndDownload()" style="gap:6px;">
+          ⬇ Kaydet & İndir
+        </button>
+        <button class="btn btn-success" onclick="saveAsFinal()" style="gap:6px;">
+          ✅ Kaydet
+        </button>
+        <button class="btn btn-ghost" onclick="saveAsDraft()" style="gap:6px;">
+          📋 Taslağa Kaydet
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SESSIONS PAGE ===== -->
+<div id="page-sessions" class="page">
+  <div class="flex gap-2 mb-3" style="justify-content:space-between;align-items:center;flex-wrap:wrap;">
+    <h2 style="font-size:1.1rem;font-weight:700;">Kayıtlı Belgeler</h2>
+    <button class="btn btn-ghost btn-sm" onclick="renderSessions()">🔄 Yenile</button>
+  </div>
+  <div id="session-search">
+    <input type="text" id="session-search-input" placeholder="🔍  Operatör, şasi, şablon adı ile ara..." oninput="renderSessions()" style="margin-bottom:8px;">
+  </div>
+  <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+    <button class="btn btn-ghost btn-sm" onclick="filterSessions('all')" id="filter-all" style="border-color:var(--primary);color:var(--primary);">Tümü</button>
+    <button class="btn btn-ghost btn-sm" onclick="filterSessions('draft')" id="filter-draft">Taslak</button>
+    <button class="btn btn-ghost btn-sm" onclick="filterSessions('final')" id="filter-final">Final</button>
+  </div>
+  <div id="sessions-list"></div>
+</div>
+
+<!-- ===== SETTINGS PAGE ===== -->
+<div id="page-settings" class="page">
+  <div class="card">
+    <div class="card-title">ℹ️ Hakkında</div>
+    <p class="text-muted">Koluman Otomotiv Endüstri A.Ş. bünyesinde kalite kontrol checklistlerinin dijitalleştirilmesi amacıyla geliştirilmiştir. Kâğıt formların yerini alarak operatörlerin mobil cihazlarından kontrol kaydı oluşturmasını, bu kayıtların merkezi olarak saklanmasını ve PDF olarak raporlanmasını sağlar.</p>
+  </div>
+</div>
+
+<!-- ===== TEMPLATE MODAL ===== -->
+<div class="modal-overlay" id="template-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="tmodal-title">Yeni Şablon</div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <button id="tmodal-history-btn" class="btn btn-ghost btn-sm" onclick="showTemplateHistory()" style="display:none;font-size:.75rem">🕐 Geçmiş</button>
+        <button class="modal-close" onclick="closeTemplateModal()">×</button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>Kontrol Grubu *</label>
+        <div style="display:flex;gap:8px;">
+          <select id="tmodal-group" style="flex:1;">
+            <option value="">-- Grup seçin --</option>
+          </select>
+          <button type="button" class="btn btn-ghost btn-sm" onclick="openGroupModal()" title="Yeni grup ekle" style="white-space:nowrap">+ Yeni Grup</button>
+        </div>
+        <div id="tmodal-group-warning" style="display:none;color:#c81e1e;font-size:.8rem;margin-top:4px;">⚠️ Kontrol grubu seçimi zorunludur.</div>
+      </div>
+      <div class="form-group">
+        <label>Şablon Adı *</label>
+        <input type="text" id="tmodal-name" placeholder="örn. Üretim Hattı Kontrol">
+      </div>
+      <div class="form-group">
+        <label>Açıklama (opsiyonel)</label>
+        <input type="text" id="tmodal-desc" placeholder="Kısa açıklama">
+      </div>
+      <hr>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+        <div class="card-title" style="margin-bottom:0;">Madde Listesi</div>
+        <div style="display:flex;gap:6px;">
+          <button class="btn btn-ghost btn-sm" onclick="addTemplateHeading()">+ Başlık Ekle</button>
+          <button class="btn btn-ghost btn-sm" onclick="addTemplateItem()">+ Madde Ekle</button>
+        </div>
+      </div>
+      <div id="tmodal-items" style="min-height:40px;"></div>
+      <hr>
+      <div class="flex gap-2" style="justify-content:flex-end;">
+        <button class="btn btn-ghost" onclick="closeTemplateModal()">İptal</button>
+        <button class="btn btn-primary" onclick="saveTemplate()">Kaydet</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== GROUP MODAL ===== -->
+<div class="modal-overlay" id="group-modal">
+  <div class="modal" style="max-width:400px">
+    <div class="modal-header">
+      <div class="modal-title" id="gmodal-title">Yeni Kontrol Grubu</div>
+      <button class="modal-close" onclick="closeGroupModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>Grup Adı *</label>
+        <input type="text" id="gmodal-name" placeholder="örn. Motor Kontrolleri">
+      </div>
+      <div class="form-group">
+        <label>Açıklama (opsiyonel)</label>
+        <input type="text" id="gmodal-desc" placeholder="Kısa açıklama">
+      </div>
+      <div class="flex gap-2" style="justify-content:flex-end;">
+        <button class="btn btn-ghost" onclick="closeGroupModal()">İptal</button>
+        <button class="btn btn-primary" onclick="saveGroup()">Kaydet</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SESSION DETAIL MODAL ===== -->
+<div class="modal-overlay" id="session-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="smodal-title">Belge Detayı</div>
+      <button class="modal-close" onclick="closeSessionModal()">×</button>
+    </div>
+    <div class="modal-body" id="smodal-body"></div>
+  </div>
+</div>
+
+<!-- ===== BARCODE SCANNER MODAL ===== -->
+<div class="modal-overlay" id="scanner-modal">
+  <div class="modal" style="max-width:400px;border-radius:14px;overflow:hidden;">
+    <div style="background:#0f2056;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;">
+      <span style="color:white;font-weight:600;font-size:.95rem;">📷 Barkod Okuyucu</span>
+      <button onclick="closeScanner()" style="background:none;border:none;color:white;font-size:1.5rem;cursor:pointer;line-height:1;">×</button>
+    </div>
+
+    <!-- Quagga kamera alanı -->
+    <div style="position:relative;background:#000;overflow:hidden;min-height:200px;">
+      <div id="sc-video-wrapper" style="width:100%;"></div>
+
+      <!-- Hedef çerçeve -->
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;">
+        <div style="width:78%;height:38%;position:relative;">
+          <div style="position:absolute;top:0;left:0;width:22px;height:22px;border-top:3px solid #00e5ff;border-left:3px solid #00e5ff;"></div>
+          <div style="position:absolute;top:0;right:0;width:22px;height:22px;border-top:3px solid #00e5ff;border-right:3px solid #00e5ff;"></div>
+          <div style="position:absolute;bottom:0;left:0;width:22px;height:22px;border-bottom:3px solid #00e5ff;border-left:3px solid #00e5ff;"></div>
+          <div style="position:absolute;bottom:0;right:0;width:22px;height:22px;border-bottom:3px solid #00e5ff;border-right:3px solid #00e5ff;"></div>
+          <div style="position:absolute;left:4px;right:4px;height:2px;background:linear-gradient(90deg,transparent,#00e5ff,transparent);animation:sc-anim 1.8s ease-in-out infinite;"></div>
+        </div>
+      </div>
+
+      <!-- Flash butonu -->
+      <button id="sc-flash" onclick="toggleFlash()" style="display:none;position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,.65);border:1.5px solid rgba(255,255,255,.5);color:white;border-radius:8px;padding:6px 12px;font-size:.8rem;cursor:pointer;z-index:10;">🔦 Flash</button>
+    </div>
+
+    <div style="padding:14px 16px;">
+      <div id="sc-status" style="text-align:center;font-size:.83rem;color:#6b7280;margin-bottom:10px;">Başlatılıyor...</div>
+
+      <div id="sc-result-box" style="display:none;background:#def7ec;border:1.5px solid #31c48d;border-radius:8px;padding:10px 12px;margin-bottom:10px;">
+        <div style="font-size:.72rem;color:#057a55;font-weight:700;margin-bottom:3px;">✅ BARKOD OKUNDU</div>
+        <div id="sc-result-text" style="font-weight:700;font-size:.95rem;letter-spacing:.5px;color:#065f46;word-break:break-all;"></div>
+      </div>
+
+      <div style="display:flex;gap:8px;justify-content:flex-end;">
+        <button class="btn btn-ghost" onclick="closeScanner()">İptal</button>
+        <button class="btn btn-warning btn-sm" id="sc-retry" onclick="retryScanner()" style="display:none;">🔄 Tekrar</button>
+        <button class="btn btn-success" id="sc-confirm" onclick="confirmScan()" style="display:none;">✅ Onayla</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes sc-anim { 0%,100%{top:5%} 50%{top:85%} }
+/* Quagga canvas ve video tam genişlik */
+#sc-video-wrapper video,
+#sc-video-wrapper canvas { width:100% !important; height:auto !important; display:block; }
+#sc-video-wrapper canvas.drawingBuffer { position:absolute; top:0; left:0; }
+#sc-video-wrapper { position:relative; }
+</style>
+
+<script>
+// ============================================================
+// SUPABASE CONFIG
+// ============================================================
+const SB_URL = 'https://ldttkapblnwztjienier.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxkdHRrYXBibG53enRqaWVuaWVyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMxMDMwNDksImV4cCI6MjA4ODY3OTA0OX0.TUbzxomsawc_JMMMKha-mSHx3ii425i54sTvOOOyWx0';
+
+async function sbRequest(method, table, body=null, params='') {
+  const url = SB_URL + '/rest/v1/' + table + (params ? '?' + params : '');
+  const headers = {
+    'apikey': SB_KEY,
+    'Authorization': 'Bearer ' + SB_KEY,
+    'Content-Type': 'application/json',
+  };
+  if (method === 'POST') headers['Prefer'] = 'resolution=merge-duplicates,return=minimal';
+  const res = await fetch(url, { method, headers, body: body ? JSON.stringify(body) : undefined });
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error('[' + table + ' ' + method + '] ' + err);
+  }
+  if (method === 'GET') return res.json();
+  return true;
+}
+
+// Tüm kayıtları getir → data alanını çıkart
+async function sbGetAll(table) {
+  const rows = await sbRequest('GET', table, null, 'select=id,data&order=created_at.asc');
+  return rows.map(r => r.data);
+}
+
+// Tek kayıt upsert
+async function sbUpsert(table, id, data) {
+  return sbRequest('POST', table, { id, data, updated_at: new Date().toISOString() });
+}
+
+// Tek kayıt sil
+async function sbDelete(table, id) {
+  return sbRequest('DELETE', table, null, 'id=eq.' + id);
+}
+
+// ============================================================
+// STATE (in-memory cache + Supabase backend)
+// ============================================================
+let state = { templates: [], sessions: [], operators: [], groups: [] };
+let editingTemplateId = null;
+let currentFillData = null;
+let sessionFilter = 'all';
+
+// Uygulama açılışında tüm veriyi çek
+async function loadState() {
+  showLoadingOverlay(true);
+  try {
+    console.log('[QC] loadState başladı...');
+    const [templates, operators, sessions, groups] = await Promise.all([
+      sbGetAll('templates').catch(e => { console.warn('templates yüklenemedi:', e.message); return []; }),
+      sbGetAll('operators').catch(e => { console.warn('operators yüklenemedi:', e.message); return []; }),
+      sbGetAll('sessions').catch(e  => { console.warn('sessions yüklenemedi:',  e.message); return []; }),
+      sbGetAll('groups').catch(e    => { console.warn('groups tablosu yok (normal):', e.message); return []; }),
+    ]);
+    state.templates = templates;
+    state.operators = operators;
+    state.sessions  = sessions;
+    state.groups    = groups || [];
+    console.log('[QC] Yüklendi — templates:', templates.length, 'operators:', operators.length, 'sessions:', sessions.length, 'groups:', (groups||[]).length);
+  } catch(e) {
+    console.error('[QC] loadState HATA:', e);
+    toast('⚠️ Bağlantı hatası: ' + e.message, 6000, 'error');
+  } finally {
+    showLoadingOverlay(false);
+  }
+}
+
+function showLoadingOverlay(show) {
+  document.getElementById('loading-overlay').style.display = show ? 'flex' : 'none';
+}
+
+// saveState artık kullanılmıyor — her işlem direkt Supabase'e yazar
+function saveState() {}
+
+// ============================================================
+// UTILS
+// ============================================================
+function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+function fmtDate(ts) {
+  if (!ts) return '—';
+  const d = new Date(ts);
+  if (isNaN(d.getTime())) return '—';
+  return d.toLocaleDateString('tr-TR') + ' ' + d.toLocaleTimeString('tr-TR', {hour:'2-digit',minute:'2-digit'});
+}
+function toast(msg, dur=2800, type='') {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = type ? 'toast-' + type : '';
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => { el.classList.add('show'); });
+  });
+  clearTimeout(el._t);
+  el._t = setTimeout(() => { el.className = ''; }, dur);
+}
+
+// ============================================================
+// NAVIGATION
+// ============================================================
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.m-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  // Desktop tabs
+  document.querySelectorAll('.nav-tab[data-page="' + name + '"]').forEach(t => t.classList.add('active'));
+  // Mobile tabs
+  document.querySelectorAll('.m-tab[data-page="' + name + '"]').forEach(t => t.classList.add('active'));
+  if (name === 'dashboard') renderDashboard();
+  if (name === 'templates') renderTemplates();
+  if (name === 'operators') renderOperators();
+  if (name === 'fill') renderFillSelect();
+  if (name === 'sessions') renderSessions();
+}
+
+function toggleMenu() {
+  const btn = document.getElementById('hamburger-btn');
+  const menu = document.getElementById('mobile-menu');
+  const overlay = document.getElementById('menu-overlay');
+  const isOpen = menu.classList.contains('open');
+  if (isOpen) { closeMenu(); } else {
+    menu.classList.add('open');
+    overlay.classList.add('open');
+    btn.classList.add('open');
+  }
+}
+
+function closeMenu() {
+  document.getElementById('mobile-menu').classList.remove('open');
+  document.getElementById('menu-overlay').classList.remove('open');
+  document.getElementById('hamburger-btn').classList.remove('open');
+}
+
+// ============================================================
+// DASHBOARD
+// ============================================================
+function renderDashboard() {
+  const sessions = state.sessions || [];
+  const today = new Date().toDateString();
+
+  const total  = sessions.length;
+  const finals = sessions.filter(s => s.status === 'final').length;
+  const drafts = sessions.filter(s => s.status === 'draft').length;
+  const todayN = sessions.filter(s => {
+    const d = s.savedAt || s.startedAt;
+    return d && new Date(d).toDateString() === today;
+  }).length;
+
+  document.getElementById('stat-total').textContent = total;
+  document.getElementById('stat-final').textContent = finals;
+  document.getElementById('stat-draft').textContent = drafts;
+  document.getElementById('stat-today').textContent = todayN;
+}
+
+// ============================================================
+// TEMPLATES
+// ============================================================
+// ============================================================
+// GROUPS
+// ============================================================
+let editingGroupId = null;
+
+function openGroupModal(id = null) {
+  editingGroupId = id;
+  const g = id ? state.groups.find(x => x.id === id) : null;
+  document.getElementById('gmodal-title').textContent = id ? 'Grubu Düzenle' : 'Yeni Kontrol Grubu';
+  document.getElementById('gmodal-name').value = g ? g.name : '';
+  document.getElementById('gmodal-desc').value = g ? (g.desc || '') : '';
+  document.getElementById('group-modal').classList.add('open');
+  setTimeout(() => document.getElementById('gmodal-name').focus(), 100);
+}
+
+function closeGroupModal() {
+  document.getElementById('group-modal').classList.remove('open');
+  // Şablon modalındaki grup dropdown'ını güncelle
+  refreshTmodalGroupSelect();
+}
+
+function saveGroup() {
+  const name = document.getElementById('gmodal-name').value.trim();
+  if (!name) { toast('⚠️ Grup adı zorunlu!'); document.getElementById('gmodal-name').focus(); return; }
+  const desc = document.getElementById('gmodal-desc').value.trim();
+  if (editingGroupId) {
+    const g = state.groups.find(x => x.id === editingGroupId);
+    g.name = name; g.desc = desc; g.updatedAt = Date.now();
+    sbUpsert('groups', g.id, g).catch(e => toast('⚠️ ' + e.message, 4000, 'error'));
+  } else {
+    const g = { id: uid(), name, desc, createdAt: Date.now() };
+    state.groups.push(g);
+    sbUpsert('groups', g.id, g).catch(e => toast('⚠️ ' + e.message, 4000, 'error'));
+  }
+  closeGroupModal();
+  renderTemplates();
+  renderFillSelect();
+  toast('✅ Grup kaydedildi', 2800, 'success');
+}
+
+function deleteGroup(id) {
+  const g = state.groups.find(x => x.id === id);
+  const templateCount = state.templates.filter(t => t.groupId === id).length;
+  if (templateCount > 0) {
+    toast(`⚠️ Bu gruba bağlı ${templateCount} şablon var. Önce şablonları başka gruba taşı.`, 4000, 'error');
+    return;
+  }
+  if (!confirm(`"${g.name}" grubunu silmek istediğinize emin misiniz?`)) return;
+  state.groups = state.groups.filter(x => x.id !== id);
+  sbDelete('groups', id).catch(e => toast('⚠️ ' + e.message, 4000, 'error'));
+  renderTemplates();
+  toast('🗑️ Grup silindi');
+}
+
+function refreshTmodalGroupSelect() {
+  const sel = document.getElementById('tmodal-group');
+  if (!sel) return;
+  const cur = sel.value;
+  sel.innerHTML = '<option value="">-- Grup seçin --</option>' +
+    state.groups.map(g => `<option value="${g.id}">${esc(g.name)}</option>`).join('');
+  if (cur) sel.value = cur;
+}
+
+// Grubun durum rengi: tüm şablonların bugünkü kayıtlarını kontrol et
+function getGroupStatus(groupId) {
+  const templates = state.templates.filter(t => t.groupId === groupId);
+  if (!templates.length) return 'empty';
+  // Son kayıtlara bak — her şablonun en son final kaydı var mı?
+  let allOk = true, anyWarn = false;
+  templates.forEach(t => {
+    const sessions = state.sessions.filter(s => s.templateId === t.id && s.status === 'final');
+    if (!sessions.length) { allOk = false; anyWarn = true; }
+    else {
+      const latest = sessions.sort((a,b) => (b.savedAt||0)-(a.savedAt||0))[0];
+      const items = t.items || [];
+      const itemCount = items.filter(x => x.type === 'item').length;
+      const answered = Object.values(latest.responses || {}).filter(r => r && r.value).length;
+      if (answered < itemCount) { allOk = false; anyWarn = true; }
+    }
+  });
+  if (allOk) return 'ok';
+  if (anyWarn) return 'warn';
+  return 'partial';
+}
+
+// Accordion açık/kapalı durumu
+const _groupOpen = {};
+
+function toggleGroup(id) {
+  _groupOpen[id] = !_groupOpen[id];
+  renderTemplates();
+}
+function toggleGroupSessions(id) {
+  _groupOpen['s_' + id] = !_groupOpen['s_' + id];
+  renderSessions();
+}
+
+function renderTemplates() {
+  const list = document.getElementById('templates-list');
+
+  // Gruba atanmamış şablonlar için "Genel" grubu
+  const ungrouped = state.templates.filter(t => !t.groupId);
+  const groups = [...state.groups];
+  if (ungrouped.length) groups.push({ id: '__ungrouped__', name: 'Grupsuz Şablonlar', _virtual: true });
+
+  if (!groups.length && !state.templates.length) {
+    list.innerHTML = '<div class="empty-state"><div class="icon">📋</div><div>Henüz şablon yok.<br>Sağ üstten yeni şablon oluşturun.</div></div>';
+    return;
+  }
+
+  list.innerHTML = groups.map(g => {
+    const templates = g._virtual
+      ? ungrouped
+      : state.templates.filter(t => t.groupId === g.id);
+    const isOpen = _groupOpen[g.id] !== false; // default açık
+    const fonClass = '';
+    const badgeHtml = '';
+
+    const tmplHtml = templates.map(t => `
+      <div class="template-item" style="margin:4px 0;">
+        <div class="template-item-left">
+          <div>
+            <div class="template-item-name">${esc(t.name)}</div>
+            <div class="template-item-meta">
+              ${(t.items||[]).filter(x=>x.type!=='heading').length} madde${t.desc ? ' · ' + esc(t.desc) : ''}
+              ${t.version > 1 ? `<span style="margin-left:6px;background:#dbeafe;color:#1e40af;padding:1px 7px;border-radius:10px;font-size:.7rem;font-weight:700">v${t.version}</span>` : ''}
+              ${t.updatedAt ? `<span style="margin-left:4px;color:var(--muted);font-size:.7rem">· ${fmtDate(t.updatedAt)} güncellendi</span>` : ''}
+            </div>
+          </div>
+        </div>
+        <div class="template-actions">
+          <button class="btn btn-ghost btn-sm" onclick="editTemplate('${t.id}')">✏️ Düzenle</button>
+          <button class="btn btn-danger btn-sm" onclick="deleteTemplate('${t.id}')">🗑️</button>
+        </div>
+      </div>`).join('') || '<div style="padding:10px;color:var(--muted);font-size:.85rem;">Bu grupta henüz şablon yok.</div>';
+
+    return `<div class="group-card ${fonClass}">
+      <div class="group-header" onclick="toggleGroup('${g.id}')">
+        <div class="group-title">
+          <span class="group-chevron ${isOpen ? 'open' : ''}">▶</span>
+          <span>${esc(g.name)}</span>
+          <span style="font-size:.75rem;color:var(--muted);font-weight:400">${templates.length} şablon</span>
+          ${badgeHtml}
+        </div>
+        <div style="display:flex;gap:6px;" onclick="event.stopPropagation()">
+          ${!g._virtual ? `<button class="btn btn-ghost btn-sm" onclick="openGroupModal('${g.id}')">✏️</button>
+          <button class="btn btn-danger btn-sm" onclick="deleteGroup('${g.id}')">🗑️</button>` : ''}
+        </div>
+      </div>
+      <div class="group-body" style="display:${isOpen ? '' : 'none'}">
+        ${tmplHtml}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openTemplateModal(id) {
+  editingTemplateId = id || null;
+  const modal = document.getElementById('template-modal');
+  const t = id ? state.templates.find(x => x.id === id) : null;
+  const _tv = id ? state.templates.find(x => x.id === id) : null;
+  document.getElementById('tmodal-title').textContent = id
+    ? ('Şablonu Düzenle' + (_tv && _tv.version > 1 ? ' (v' + _tv.version + ')' : ''))
+    : 'Yeni Şablon';
+  refreshTmodalGroupSelect();
+  document.getElementById('tmodal-group').value = t ? (t.groupId || '') : '';
+  document.getElementById('tmodal-group-warning').style.display = 'none';
+  document.getElementById('tmodal-name').value = t ? t.name : '';
+  document.getElementById('tmodal-desc').value = t ? (t.desc || '') : '';
+  const container = document.getElementById('tmodal-items');
+  container.innerHTML = '';
+  const items = t ? t.items : [];
+  items.forEach(item => {
+    if (item.type === 'heading') addTemplateHeading(item.text, item.id);
+    else addTemplateItem(item.text, item.id);
+  });
+  if (!items.length) addTemplateItem('', null);
+  // Versiyon geçmişi butonu
+  const histBtn = document.getElementById('tmodal-history-btn');
+  if (histBtn) histBtn.style.display = (t && t.versions && t.versions.length > 0) ? '' : 'none';
+  modal.classList.add('open');
+}
+
+function closeTemplateModal() {
+  document.getElementById('template-modal').classList.remove('open');
+}
+
+function showTemplateHistory() {
+  const t = state.templates.find(x => x.id === editingTemplateId);
+  if (!t || !t.versions || !t.versions.length) return;
+
+  const rows = [...t.versions].reverse().map((v, i) => {
+    const itemCount = (v.items || []).filter(x => x.type === 'item').length;
+    const date = fmtDate(v.savedAt);
+    const itemRows = (v.items || []).map((item, idx) => {
+      if (item.type === 'heading') {
+        return `<tr><td colspan="2" style="background:#0f2056;color:white;padding:5px 10px;font-weight:700;font-size:11px">📌 ${item.text}</td></tr>`;
+      }
+      const num = (v.items || []).slice(0, idx).filter(x => x.type === 'item').length + 1;
+      return `<tr style="background:${num%2===0?'#f8fafc':'white'}">
+        <td style="padding:4px 8px;border:1px solid #e5e7eb;color:#9ca3af;font-size:11px;width:24px">${num}</td>
+        <td style="padding:4px 8px;border:1px solid #e5e7eb;font-size:11px">${item.text}</td>
+      </tr>`;
+    }).join('');
+    return `<details style="border-bottom:1px solid #e5e7eb">
+      <summary style="padding:10px 14px;cursor:pointer;display:flex;align-items:center;gap:10px;list-style:none;user-select:none">
+        <span style="font-weight:700;color:#1e40af;background:#dbeafe;padding:2px 8px;border-radius:8px">v${v.version}</span>
+        <span style="font-size:.82rem;color:#6b7280">${date}</span>
+        <span style="font-size:.82rem">${itemCount} madde</span>
+        <span style="margin-left:auto;font-size:.8rem;color:#9ca3af">▶ detaylar</span>
+      </summary>
+      <div style="padding:0 14px 12px">
+        <table style="width:100%;border-collapse:collapse;margin-top:6px">
+          <thead><tr style="background:#0f2056;color:white">
+            <th style="padding:5px 8px;font-size:11px;text-align:center;width:24px">#</th>
+            <th style="padding:5px 8px;font-size:11px;text-align:left">Madde</th>
+          </tr></thead>
+          <tbody>${itemRows}</tbody>
+        </table>
+      </div>
+    </details>`;
+  }).join('');
+
+  const html = `<div style="font-size:.82rem;color:var(--muted);padding:10px 14px 4px">
+    Toplam <b>${t.versions.length}</b> önceki versiyon saklanıyor. Mevcut: <b>v${t.version || 1}</b>
+  </div>${rows}`;
+
+  // Basit alert ile göster
+  const win = window.open('', '_blank', 'width=480,height=400,scrollbars=yes');
+  if (win) {
+    win.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8">
+      <title>${esc(t.name)} — Versiyon Geçmişi</title>
+      <style>body{font-family:'Segoe UI',Arial,sans-serif;margin:0;background:#f8fafc}
+      h2{background:#0f2056;color:white;margin:0;padding:14px 18px;font-size:14px}
+      </style></head><body>
+      <h2>📋 ${esc(t.name)} — Versiyon Geçmişi</h2>${html}</body></html>`);
+    win.document.close();
+  }
+}
+
+function editTemplate(id) { openTemplateModal(id); }
+
+function addTemplateItem(text='', existingId=null) {
+  const container = document.getElementById('tmodal-items');
+  const div = document.createElement('div');
+  div.className = 'item-row';
+  div.draggable = true;
+  div.dataset.type = 'item';
+  div.dataset.id = existingId || uid(); // mevcut ID'yi koru
+  div.innerHTML = `
+    <span class="drag-handle" title="Sürükle">⠿</span>
+    <span class="item-num">-</span>
+    <input type="text" value="${esc(text)}" placeholder="Kontrol maddesi...">
+    <button class="btn btn-danger btn-sm" style="padding:4px 8px;" onclick="this.closest('.item-row,.heading-row').remove();renumberItems()">✕</button>
+  `;
+  container.appendChild(div);
+  initDragDrop(div);
+  renumberItems();
+}
+
+function addTemplateHeading(text='', existingId=null) {
+  const container = document.getElementById('tmodal-items');
+  const div = document.createElement('div');
+  div.className = 'heading-row';
+  div.draggable = true;
+  div.dataset.type = 'heading';
+  div.dataset.id = existingId || uid(); // mevcut ID'yi koru
+  div.innerHTML = `
+    <span class="drag-handle" title="Sürükle">⠿</span>
+    <span class="heading-icon">📌</span>
+    <input type="text" value="${esc(text)}" placeholder="Bölüm başlığı..." style="font-weight:700;color:var(--primary);">
+    <button class="btn btn-ghost btn-sm" style="padding:4px 8px;" onclick="this.closest('.item-row,.heading-row').remove();renumberItems()">✕</button>
+  `;
+  container.appendChild(div);
+  initDragDrop(div);
+}
+
+function renumberItems() {
+  let num = 0;
+  document.querySelectorAll('#tmodal-items .item-row, #tmodal-items .heading-row').forEach(row => {
+    if (row.dataset.type === 'item') {
+      num++;
+      const span = row.querySelector('.item-num');
+      if (span) span.textContent = num + '.';
+    }
+  });
+}
+
+// ── Sürükle-bırak ─────────────────────────────────────────
+let dragSrc = null;
+function initDragDrop(el) {
+  el.addEventListener('dragstart', e => {
+    dragSrc = el;
+    setTimeout(() => el.classList.add('dragging'), 0);
+    e.dataTransfer.effectAllowed = 'move';
+  });
+  el.addEventListener('dragend', () => {
+    el.classList.remove('dragging');
+    document.querySelectorAll('#tmodal-items .drag-over').forEach(r => r.classList.remove('drag-over'));
+    renumberItems();
+  });
+  el.addEventListener('dragover', e => {
+    e.preventDefault();
+    if (dragSrc && dragSrc !== el) {
+      document.querySelectorAll('#tmodal-items .drag-over').forEach(r => r.classList.remove('drag-over'));
+      el.classList.add('drag-over');
+    }
+  });
+  el.addEventListener('drop', e => {
+    e.preventDefault();
+    if (dragSrc && dragSrc !== el) {
+      const container = document.getElementById('tmodal-items');
+      const allRows = [...container.children];
+      const srcIdx = allRows.indexOf(dragSrc);
+      const tgtIdx = allRows.indexOf(el);
+      if (srcIdx < tgtIdx) el.after(dragSrc);
+      else el.before(dragSrc);
+      el.classList.remove('drag-over');
+      renumberItems();
+    }
+  });
+}
+
+function saveTemplate() {
+  const groupId = document.getElementById('tmodal-group').value;
+  if (!groupId) {
+    document.getElementById('tmodal-group-warning').style.display = '';
+    toast('⚠️ Kontrol grubu seçimi zorunludur!'); return;
+  }
+  document.getElementById('tmodal-group-warning').style.display = 'none';
+  const name = document.getElementById('tmodal-name').value.trim();
+  if (!name) { toast('⚠️ Şablon adı zorunlu!'); return; }
+  const rows = document.querySelectorAll('#tmodal-items .item-row, #tmodal-items .heading-row');
+  const items = [];
+  rows.forEach(row => {
+    const t = row.querySelector('input').value.trim();
+    if (!t) return;
+    const existingId = row.dataset.id || uid();
+    if (row.dataset.type === 'heading') items.push({ id: existingId, type: 'heading', text: t });
+    else items.push({ id: existingId, type: 'item', text: t });
+  });
+  const realItems = items.filter(x => x.type === 'item');
+  if (!realItems.length) { toast('⚠️ En az bir kontrol maddesi gerekli!'); return; }
+
+  // ── Versiyonlama + Silme koruması ─────────────────────────
+  if (editingTemplateId) {
+    const existing = state.templates.find(x => x.id === editingTemplateId);
+    const existingItemIds = new Set((existing.items || []).filter(x => x.type === 'item').map(x => x.id));
+    const newItemIds      = new Set(items.filter(x => x.type === 'item').map(x => x.id));
+    const deletedIds      = [...existingItemIds].filter(id => !newItemIds.has(id));
+
+    // Silinen maddeler varsa uyar
+    if (deletedIds.length > 0) {
+      const usedInSessions = state.sessions.some(s =>
+        deletedIds.some(did => s.responses && s.responses[did])
+      );
+      if (usedInSessions) {
+        const ok = confirm(
+          `⚠️ Dikkat!
+
+${deletedIds.length} kontrol maddesi silinecek.
+` +
+          `Bu maddeler mevcut kayıtlarda kullanılmış — o kayıtlardaki cevaplar kaybolacak.
+
+` +
+          `Devam etmek istiyor musunuz?`
+        );
+        if (!ok) return;
+      }
+    }
+
+    // Değişiklik varsa versiyonu kaydet
+    const hasChanges = JSON.stringify(existing.items) !== JSON.stringify(items) || existing.name !== name;
+    if (hasChanges) {
+      // Eski versiyonu arşivle (items değişmişse)
+      const oldVersion = {
+        version: existing.version || 1,
+        savedAt: existing.updatedAt || existing.createdAt || Date.now(),
+        items: existing.items,
+      };
+      existing.versions = [...(existing.versions || []), oldVersion].slice(-10); // max 10 versiyon
+      existing.version  = (existing.version || 1) + 1;
+      existing.updatedAt = Date.now();
+    }
+
+    existing.name    = name;
+    existing.groupId = groupId;
+    existing.desc    = document.getElementById('tmodal-desc').value.trim();
+    existing.items   = items;
+
+    sbUpsert('templates', existing.id, existing).catch(e => toast('⚠️ Kayıt hatası: ' + e.message, 4000, 'error'));
+  } else {
+    const newT = {
+      id: uid(), name, groupId,
+      desc: document.getElementById('tmodal-desc').value.trim(),
+      items, createdAt: Date.now(), version: 1, versions: []
+    };
+    state.templates.push(newT);
+    sbUpsert('templates', newT.id, newT).catch(e => toast('⚠️ Kayıt hatası: ' + e.message, 4000, 'error'));
+  }
+
+  closeTemplateModal();
+  renderTemplates();
+  toast('✅ Şablon kaydedildi', 2800, 'success');
+}
+
+function deleteTemplate(id) {
+  const t = state.templates.find(x => x.id === id);
+  // Bu şablonla kayıt var mı?
+  const usedCount = state.sessions.filter(s => s.templateId === id).length;
+  if (usedCount > 0) {
+    const ok = confirm(
+      `⚠️ "${t.name}" şablonu ${usedCount} kayıtta kullanılmış.
+
+` +
+      `Şablonu silseniz bile mevcut kayıtlar Supabase'de korunur, ancak PDF görüntüleme bozulabilir.
+
+` +
+      `Yine de silmek istiyor musunuz?`
+    );
+    if (!ok) return;
+  } else {
+    if (!confirm(`"${t.name}" şablonunu silmek istediğinize emin misiniz?`)) return;
+  }
+  state.templates = state.templates.filter(x => x.id !== id);
+  sbDelete('templates', id).catch(e => toast('⚠️ Silme hatası: ' + e.message, 4000, 'error'));
+  renderTemplates();
+  toast('🗑️ Şablon silindi');
+}
+
+// ============================================================
+// FILL
+// ============================================================
+// Seçili operatör ID'leri
+let selectedOperatorIds = [];
+
+function renderFillSelect() {
+  const formVisible = document.getElementById('fill-form-section').style.display !== 'none';
+  if (formVisible) return;
+
+  _editingSessionId = null;
+
+  // Grup dropdown
+  const gSel = document.getElementById('fill-group-select');
+  gSel.innerHTML = '<option value="">-- Kontrol grubu seçin --</option>' +
+    state.groups.map(g => `<option value="${g.id}">${esc(g.name)}</option>`).join('');
+
+  // Şablon dropdown sıfırla
+  const tSel = document.getElementById('fill-template-select');
+  tSel.innerHTML = '<option value="">-- Önce grup seçin --</option>';
+
+  selectedOperatorIds = [];
+  renderOperatorChips();
+  renderOperatorDropdownList();
+
+  ['fill-chassis','fill-customer','fill-order','fill-location','fill-note'].forEach(fid => {
+    const el = document.getElementById(fid);
+    if (el) el.value = '';
+  });
+
+  document.getElementById('fill-select-section').style.display = '';
+  document.getElementById('fill-form-section').style.display = 'none';
+}
+
+function onFillGroupChange() {
+  const gId = document.getElementById('fill-group-select').value;
+  const tSel = document.getElementById('fill-template-select');
+  if (!gId) {
+    tSel.innerHTML = '<option value="">-- Önce grup seçin --</option>';
+    return;
+  }
+  const templates = state.templates.filter(t => t.groupId === gId);
+  tSel.innerHTML = '<option value="">-- Şablon seçin --</option>' +
+    templates.map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join('');
+  document.getElementById('group-warning').style.display = 'none';
+}
+
+function renderOperatorChips() {
+  const container = document.getElementById('operator-chips');
+  if (!selectedOperatorIds.length) {
+    container.innerHTML = '<span class="op-empty-hint">Operatör seçmek için tıklayın...</span>';
+    return;
+  }
+  container.innerHTML = selectedOperatorIds.map(id => {
+    const op = state.operators.find(o => o.id === id);
+    if (!op) return '';
+    return `<span class="op-chip">[${esc(op.sicil)}] ${esc(op.name)} ${esc(op.surname)}
+      <button onclick="event.stopPropagation();removeOperator('${id}')">✕</button>
+    </span>`;
+  }).join('');
+}
+
+function renderOperatorDropdownList() {
+  const list = document.getElementById('operator-dropdown-list');
+  const sorted = [...(state.operators||[])].sort((a,b) => a.sicil.localeCompare(b.sicil));
+  if (!sorted.length) {
+    list.innerHTML = '<div style="padding:12px;color:var(--muted);font-size:.85rem;">Operatör bulunamadı</div>';
+    return;
+  }
+  list.innerHTML = sorted.map(op => {
+    const sel = selectedOperatorIds.includes(op.id);
+    return `<div class="op-dropdown-item ${sel?'selected':''}" onclick="toggleOperator('${op.id}')">
+      <span class="op-check">${sel ? '✓' : ''}</span>
+      <span>[${esc(op.sicil)}] ${esc(op.name)} ${esc(op.surname)}</span>
+    </div>`;
+  }).join('');
+}
+
+function toggleOperatorDropdown() {
+  const dd = document.getElementById('operator-dropdown');
+  const isOpen = dd.style.display !== 'none';
+  dd.style.display = isOpen ? 'none' : 'block';
+  if (!isOpen) renderOperatorDropdownList();
+}
+
+function toggleOperator(id) {
+  const idx = selectedOperatorIds.indexOf(id);
+  if (idx >= 0) selectedOperatorIds.splice(idx, 1);
+  else selectedOperatorIds.push(id);
+  renderOperatorChips();
+  renderOperatorDropdownList();
+}
+
+function removeOperator(id) {
+  selectedOperatorIds = selectedOperatorIds.filter(x => x !== id);
+  renderOperatorChips();
+  renderOperatorDropdownList();
+}
+
+// Dropdown dışına tıklayınca kapat — DOMContentLoaded içinde kurulur
+function initOperatorDropdownClose() {
+  document.addEventListener('click', e => {
+    const dd = document.getElementById('operator-dropdown');
+    const chips = document.getElementById('operator-chips');
+    if (dd && chips && !dd.contains(e.target) && !chips.contains(e.target)) {
+      dd.style.display = 'none';
+    }
+  });
+}
+
+function loadFillTemplate() {}
+
+function startFill() {
+  const gId = document.getElementById('fill-group-select').value;
+  const tId = document.getElementById('fill-template-select').value;
+  const chassis = document.getElementById('fill-chassis').value.trim().toUpperCase();
+
+  if (!gId) {
+    document.getElementById('group-warning').style.display = '';
+    toast('⚠️ Kontrol grubu seçimi zorunludur!', 3200, 'error');
+    return;
+  }
+  document.getElementById('group-warning').style.display = 'none';
+
+  if (!tId) {
+    document.getElementById('template-warning').style.display = '';
+    document.getElementById('fill-template-select').focus();
+    toast('⚠️ Şablon seçimi zorunludur!', 3200, 'error');
+    return;
+  }
+  document.getElementById('template-warning').style.display = 'none';
+  if (!selectedOperatorIds.length) {
+    document.getElementById('operator-warning').style.display = '';
+    toast('⚠️ En az bir operatör seçin', 3200, 'error');
+    return;
+  }
+  document.getElementById('operator-warning').style.display = 'none';
+
+  if (!chassis) {
+    document.getElementById('chassis-warning').style.display = '';
+    document.getElementById('fill-chassis').focus();
+    document.getElementById('fill-chassis').style.borderColor = '#c81e1e';
+    toast('⚠️ Şasi numarası zorunludur!', 3200, 'error');
+    return;
+  }
+  document.getElementById('chassis-warning').style.display = 'none';
+  document.getElementById('fill-chassis').style.borderColor = '';
+
+  const template = state.templates.find(x => x.id === tId);
+  const ops = selectedOperatorIds.map(id => state.operators.find(o => o.id === id)).filter(Boolean);
+  const operatorLabel = ops.map(op => `[${op.sicil}] ${op.name} ${op.surname}`).join(', ');
+
+  // Düzenleme modunda eski kaydı baz al, yoksa yeni kayıt oluştur
+  const _existingSession = _editingSessionId
+    ? state.sessions.find(x => x.id === _editingSessionId)
+    : null;
+
+  currentFillData = {
+    id:               _existingSession ? _existingSession.id : uid(),
+    startedAt:        _existingSession ? _existingSession.startedAt : Date.now(),
+    responses:        _existingSession ? { ..._existingSession.responses } : {},
+    templateId:       tId,
+    templateName:     template.name,
+    templateVersion:  template.version || 1,
+    // Şablonun bu andaki madde listesini kayıt içine göm
+    templateSnapshot: JSON.parse(JSON.stringify(template.items || [])),
+    operatorIds:      selectedOperatorIds,
+    operatorId:       selectedOperatorIds[0],
+    operator:         operatorLabel,
+    operatorSicil:    ops.map(o=>o.sicil).join(', '),
+    chassis,
+    customer: document.getElementById('fill-customer').value.trim(),
+    order:    document.getElementById('fill-order').value.trim(),
+    location: document.getElementById('fill-location').value.trim(),
+    note:     document.getElementById('fill-note').value.trim(),
+    status:  'draft',
+  };
+  _editingSessionId = null; // flag'i sıfırla
+
+  document.getElementById('fill-title').textContent = template.name;
+  document.getElementById('fill-info').textContent = `${operatorLabel}  ·  ${chassis}`;
+  document.getElementById('fill-select-section').style.display = 'none';
+  document.getElementById('fill-form-section').style.display = '';
+  document.getElementById('fill-banner').style.display = '';
+
+  const container = document.getElementById('fill-items-container');
+  let itemNum = 0;
+  container.innerHTML = template.items.map(item => {
+    if (item.type === 'heading') {
+      return `<div class="fill-heading" id="heading-${item.id}">📌 ${esc(item.text)}</div>`;
+    }
+    itemNum++;
+    return `
+    <div class="fill-item unanswered" id="fi-${item.id}">
+      <div class="fill-item-header">
+        <span class="fill-item-num">${itemNum}.</span>
+        <span class="fill-item-text">${esc(item.text)}</span>
+      </div>
+      <div class="radio-group">
+        <label class="radio-opt ok" onclick="selectOption('${item.id}','ok',this)">
+          <input type="radio" name="r-${item.id}" value="ok"> ✅ Uygun
+        </label>
+        <label class="radio-opt nok" onclick="selectOption('${item.id}','nok',this)">
+          <input type="radio" name="r-${item.id}" value="nok"> ❌ Uygun Değil
+        </label>
+        <label class="radio-opt dev" onclick="selectOption('${item.id}','dev',this)">
+          <input type="radio" name="r-${item.id}" value="dev"> ⚠️ Sapmalı Uygun
+        </label>
+      </div>
+      <div class="reason-box" id="rb-${item.id}" style="display:none;">
+        <label>Sebep / Açıklama *</label>
+        <textarea placeholder="Lütfen sebebi açıklayın..." rows="2" id="reason-${item.id}"></textarea>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Düzenleme modunda mevcut cevapları restore et
+  if (Object.keys(currentFillData.responses).length > 0) {
+    template.items.filter(item => item.type !== 'heading').forEach(item => {
+      const r = currentFillData.responses[item.id];
+      if (!r || !r.value) return;
+      const radio = document.querySelector(`input[name="r-${item.id}"][value="${r.value}"]`);
+      if (radio) {
+        radio.checked = true;
+        radio.closest('.radio-opt').classList.add('selected');
+      }
+      const card = document.getElementById('fi-' + item.id);
+      if (card) {
+        card.classList.remove('unanswered');
+        card.classList.add(r.value === 'ok' ? 'answered-ok' : r.value === 'nok' ? 'answered-nok' : 'answered-dev');
+      }
+      if ((r.value === 'nok' || r.value === 'dev') && r.reason) {
+        const rb = document.getElementById('rb-' + item.id);
+        if (rb) rb.style.display = '';
+        const ta = document.getElementById('reason-' + item.id);
+        if (ta) ta.value = r.reason;
+      }
+    });
+  }
+
+  updateProgress();
+  startAutosave();
+}
+
+function selectOption(itemId, val, labelEl) {
+  document.querySelectorAll(`[name="r-${itemId}"]`).forEach(r => {
+    r.closest('.radio-opt').classList.remove('selected');
+  });
+  labelEl.classList.add('selected');
+  labelEl.querySelector('input').checked = true;
+  currentFillData.responses[itemId] = { value: val, reason: '' };
+
+  // Madde rengi
+  const card = document.getElementById('fi-' + itemId);
+  card.classList.remove('unanswered','answered-ok','answered-nok','answered-dev');
+  card.classList.add(val === 'ok' ? 'answered-ok' : val === 'nok' ? 'answered-nok' : 'answered-dev');
+
+  // Titreşim (nok/dev için)
+  if ((val === 'nok' || val === 'dev') && navigator.vibrate) {
+    navigator.vibrate(val === 'nok' ? [60, 40, 60] : [40]);
+  }
+
+  const rb = document.getElementById('rb-' + itemId);
+  if (val === 'nok' || val === 'dev') {
+    rb.style.display = '';
+    document.getElementById('reason-' + itemId).focus();
+  } else {
+    rb.style.display = 'none';
+    const r = document.getElementById('reason-' + itemId);
+    if (r) r.value = '';
+  }
+
+  updateProgress();
+}
+
+function collectResponses() {
+  const template = state.templates.find(x => x.id === currentFillData.templateId);
+  let valid = true;
+  let allAnswered = true;
+
+  template.items.filter(item => item.type !== 'heading').forEach(item => {
+    const checked = document.querySelector(`input[name="r-${item.id}"]:checked`);
+    if (!checked) { allAnswered = false; return; }
+    const val = checked.value;
+    const reason = document.getElementById('reason-' + item.id)?.value.trim() || '';
+    if ((val === 'nok' || val === 'dev') && !reason) {
+      valid = false;
+      document.getElementById('rb-' + item.id).style.outline = '2px solid red';
+    } else {
+      const rb = document.getElementById('rb-' + item.id);
+      if (rb) rb.style.outline = '';
+    }
+    currentFillData.responses[item.id] = { value: val, reason };
+  });
+  return { valid, allAnswered };
+}
+
+// Veriyi state'e yaz
+function _writeSession(status) {
+  currentFillData.status    = status;
+  currentFillData.savedAt   = Date.now();
+  const idx = state.sessions.findIndex(s => s.id === currentFillData.id);
+  if (idx >= 0) state.sessions[idx] = { ...currentFillData };
+  else          state.sessions.push({ ...currentFillData });
+  sbUpsert('sessions', currentFillData.id, currentFillData)
+    .catch(e => toast('⚠️ Kayıt hatası: ' + e.message, 4000, 'error'));
+  return currentFillData.id;
+}
+
+// Otomatik kayıt (30sn)
+function saveDraft(silent=false) {
+  collectResponses();
+  _writeSession('draft');
+  if (silent) {
+    const dot = document.getElementById('autosave-dot');
+    dot.style.animation = 'none'; dot.offsetHeight;
+    dot.style.animation = 'pulse-dot 1.5s ease-in-out';
+  } else {
+    toast('📋 Taslağa kaydedildi', 2800, 'success');
+  }
+}
+
+// Kaydet & İndir
+function saveAndDownload() {
+  const { valid, allAnswered } = collectResponses();
+  if (!allAnswered) { toast('⚠️ Tüm maddeler cevaplanmalı!', 3200, 'error'); return; }
+  if (!valid)       { toast('⚠️ Uygun Değil / Sapmalı maddeler için sebep girin!', 3200, 'error'); return; }
+  const id = _writeSession('final');
+  stopAutosave();
+  toast('⬇️ Belge kaydedildi, indiriliyor...', 3000, 'success');
+  setTimeout(() => { downloadPdf(id); cancelFill(); showPage('sessions'); }, 400);
+}
+
+// Kaydet
+function saveAsFinal() {
+  const { valid, allAnswered } = collectResponses();
+  if (!allAnswered) { toast('⚠️ Tüm maddeler cevaplanmalı!', 3200, 'error'); return; }
+  if (!valid)       { toast('⚠️ Uygun Değil / Sapmalı maddeler için sebep girin!', 3200, 'error'); return; }
+  _writeSession('final');
+  stopAutosave();
+  toast('✅ Belge kaydedildi', 2800, 'success');
+  setTimeout(() => { cancelFill(); showPage('sessions'); }, 400);
+}
+
+// Taslağa Kaydet
+function saveAsDraft() {
+  collectResponses();
+  _writeSession('draft');
+  stopAutosave();
+  toast('📋 Taslağa kaydedildi', 2800, 'success');
+  setTimeout(() => { cancelFill(); showPage('sessions'); }, 400);
+}
+
+function goToSessions() {
+  cancelFill();
+  showPage('sessions');
+}
+
+function cancelFill() {
+  stopAutosave();
+  currentFillData = null;
+  document.getElementById('fill-select-section').style.display = '';
+  document.getElementById('fill-form-section').style.display = 'none';
+  document.getElementById('fill-banner').style.display = 'none';
+}
+
+
+// ============================================================
+// PROGRESS BAR + AUTOSAVE
+// ============================================================
+function updateProgress() {
+  if (!currentFillData) return;
+  const template = state.templates.find(x => x.id === currentFillData.templateId);
+  if (!template) return;
+  const total = template.items.length;
+  const done = template.items.filter(item =>
+    document.querySelector(`input[name="r-${item.id}"]:checked`)
+  ).length;
+  const pct = total ? Math.round(done / total * 100) : 0;
+  document.getElementById('fill-progress-bar').style.width = pct + '%';
+  document.getElementById('fill-progress-text').textContent = `${done} / ${total}`;
+}
+
+let autosaveTimer = null;
+function startAutosave() {
+  stopAutosave();
+  autosaveTimer = setInterval(() => {
+    if (currentFillData) saveDraft(true);
+  }, 30000);
+}
+function stopAutosave() {
+  if (autosaveTimer) { clearInterval(autosaveTimer); autosaveTimer = null; }
+}
+
+// ============================================================
+// SESSIONS
+// ============================================================
+function _sessionItemHtml(s) {
+  return `<div class="session-item">
+    <div>
+      <div style="font-weight:600;font-size:.9rem;">${esc(s.templateName)}${s.templateVersion > 1 ? ` <span style="background:#dbeafe;color:#1e40af;padding:1px 5px;border-radius:8px;font-size:.7rem;font-weight:700">v${s.templateVersion}</span>` : ''}</div>
+      <div class="session-meta">${esc(s.operator)}${s.chassis ? ' · Şasi: ' + esc(s.chassis) : ''} · ${fmtDate(s.savedAt || s.startedAt)}</div>
+      ${s.note ? `<div class="session-meta">${esc(s.note)}</div>` : ''}
+    </div>
+    <div class="flex gap-2" style="align-items:center;flex-wrap:wrap;">
+      <span class="badge badge-${s.status}">${s.status === 'draft' ? 'Taslak' : 'Kayıtlı'}</span>
+      <button class="btn btn-ghost btn-sm" onclick="viewSession('${s.id}')">👁 Görüntüle</button>
+      <button class="btn btn-warning btn-sm" onclick="editSession('${s.id}')">✏️ Düzenle</button>
+      <button class="btn btn-primary btn-sm" onclick="downloadPdf('${s.id}')">⬇ PDF</button>
+      <button class="btn btn-danger btn-sm" onclick="deleteSession('${s.id}')">🗑️</button>
+    </div>
+  </div>`;
+}
+
+function startFillFromSession(templateId, chassis) {
+  // Doldur sekmesine git, şablon ve şasiyi önceden doldur
+  showPage('fill');
+  renderFillSelect();
+
+  // Şablonu bul, grubunu seç
+  const t = state.templates.find(x => x.id === templateId);
+  if (!t) return;
+  const gSel = document.getElementById('fill-group-select');
+  gSel.value = t.groupId || '';
+  onFillGroupChange();
+  document.getElementById('fill-template-select').value = templateId;
+  if (chassis) document.getElementById('fill-chassis').value = chassis;
+
+  toast('✏️ Şablon seçildi, bilgileri tamamlayıp "Başla →" butonuna basın', 3500, 'info');
+}
+
+function filterSessions(f) {
+  sessionFilter = f;
+  ['all','draft','final'].forEach(k => {
+    const btn = document.getElementById('filter-' + k);
+    btn.style.borderColor = k === f ? 'var(--primary)' : 'var(--border)';
+    btn.style.color = k === f ? 'var(--primary)' : 'var(--muted)';
+  });
+  renderSessions();
+}
+
+function renderSessions() {
+  const list = document.getElementById('sessions-list');
+  const q = (document.getElementById('session-search-input')?.value || '').trim().toLowerCase();
+  let allSessions = [...state.sessions].filter(s => s && s.templateName).reverse();
+  if (sessionFilter !== 'all') allSessions = allSessions.filter(s => s.status === sessionFilter);
+  if (q) allSessions = allSessions.filter(s =>
+    (s.operator||'').toLowerCase().includes(q) ||
+    (s.chassis||'').toLowerCase().includes(q) ||
+    (s.templateName||'').toLowerCase().includes(q) ||
+    (s.customer||'').toLowerCase().includes(q)
+  );
+
+  if (!allSessions.length) {
+    list.innerHTML = q
+      ? '<div class="empty-state"><div class="icon">🔍</div><div>Aramanızla eşleşen kayıt bulunamadı.</div></div>'
+      : '<div class="empty-state"><div class="icon">📂</div><div>Henüz kayıt yok.</div></div>';
+    return;
+  }
+
+  // Arama/filtre varsa düz liste
+  if (q || sessionFilter !== 'all') {
+    list.innerHTML = allSessions.map(s => _sessionItemHtml(s)).join('');
+    return;
+  }
+
+  // ── Kontrol Grubu + Şasi No kombinasyonu bazında grupla ──
+  // Her benzersiz (groupId, chassis) çifti ayrı bir kart olacak
+  const combos = [];
+  const seen = new Set();
+
+  allSessions.forEach(s => {
+    const t = state.templates.find(x => x.id === s.templateId);
+    const gId = t ? (t.groupId || '__ungrouped__') : '__ungrouped__';
+    const chassis = s.chassis || '__no_chassis__';
+    const key = gId + '::' + chassis;
+    if (!seen.has(key)) {
+      seen.add(key);
+      const g = gId === '__ungrouped__'
+        ? { id: '__ungrouped__', name: 'Grupsuz Kayıtlar' }
+        : state.groups.find(x => x.id === gId) || { id: gId, name: 'Bilinmeyen Grup' };
+      combos.push({ key, gId, g, chassis: s.chassis || null });
+    }
+  });
+
+  // En yeni kayıt önce gelsin
+  combos.sort((a, b) => {
+    const aLast = Math.max(...allSessions.filter(s => {
+      const t = state.templates.find(x => x.id === s.templateId);
+      const gId = t ? (t.groupId || '__ungrouped__') : '__ungrouped__';
+      return gId + '::' + (s.chassis || '__no_chassis__') === a.key;
+    }).map(s => s.savedAt || s.startedAt || 0));
+    const bLast = Math.max(...allSessions.filter(s => {
+      const t = state.templates.find(x => x.id === s.templateId);
+      const gId = t ? (t.groupId || '__ungrouped__') : '__ungrouped__';
+      return gId + '::' + (s.chassis || '__no_chassis__') === b.key;
+    }).map(s => s.savedAt || s.startedAt || 0));
+    return bLast - aLast;
+  });
+
+  list.innerHTML = combos.map(({ key, gId, g, chassis }) => {
+    // Bu kombinasyona ait mevcut kayıtlar
+    const comboSessions = allSessions.filter(s => {
+      const t = state.templates.find(x => x.id === s.templateId);
+      const sGid = t ? (t.groupId || '__ungrouped__') : '__ungrouped__';
+      const sChassis = s.chassis || '__no_chassis__';
+      return sGid + '::' + sChassis === key;
+    });
+
+    // Bu gruba ait TÜM şablonlar (kayıt var mı yok mu fark etmez)
+    const allGroupTemplates = gId === '__ungrouped__'
+      ? state.templates.filter(t => !t.groupId)
+      : state.templates.filter(t => t.groupId === gId);
+
+    // Şablon durumu — bu şasi için kayıt var mı?
+    function tmplStatus(tId) {
+      const ss = comboSessions.filter(s => s.templateId === tId);
+      if (!ss.length) return 'empty';
+      if (ss.every(s => s.status === 'final')) return 'ok';
+      return 'warn';
+    }
+
+    // Grup genel durumu
+    const statuses = allGroupTemplates.map(t => tmplStatus(t.id));
+    const groupStatus = statuses.every(s => s === 'ok') ? 'ok'
+      : statuses.some(s => s === 'empty') ? 'empty' : 'warn';
+    const groupFon = groupStatus === 'ok' ? 'group-fon-ok' : 'group-fon-warn';
+    const groupBadge = groupStatus === 'ok'
+      ? '<span class="group-badge group-badge-ok">✅ Tamamlandı</span>'
+      : groupStatus === 'empty'
+      ? '<span class="group-badge group-badge-warn">⚠️ Eksik şablon var</span>'
+      : '<span class="group-badge group-badge-warn">⚠️ Taslak / Eksik</span>';
+
+    const isGroupOpen = _groupOpen[key] !== false;
+    const chassisLabel = chassis ? `<span style="font-size:.82rem;color:var(--primary);font-weight:700;letter-spacing:.3px">${esc(chassis)}</span>` : '';
+
+    // Şablon satırları — tüm şablonlar görünsün
+    const tmplHtml = allGroupTemplates.map(t => {
+      const tSessions = comboSessions.filter(s => s.templateId === t.id);
+      const tStatus   = tmplStatus(t.id);
+      const tFonBg    = tStatus === 'ok'
+        ? 'background:rgba(209,250,229,.4);border-color:#6ee7b7'
+        : tStatus === 'warn'
+        ? 'background:rgba(254,226,226,.4);border-color:#fca5a5'
+        : 'background:rgba(254,243,199,.3);border-color:#fcd34d';
+      const tBadge = tStatus === 'ok'
+        ? '<span class="group-badge group-badge-ok">✅ Tamam</span>'
+        : tStatus === 'warn'
+        ? '<span class="group-badge group-badge-warn">⚠️ Taslak</span>'
+        : '<span class="group-badge group-badge-partial">— Boş</span>';
+      const isTOpen = _groupOpen['t_' + key + '_' + t.id] !== false;
+      const tKey = 't_' + key + '_' + t.id;
+
+      const sessionRows = tSessions.map(s => {
+        const date   = fmtDate(s.savedAt || s.startedAt);
+        const sBadge = s.status === 'final'
+          ? '<span class="group-badge group-badge-ok" style="font-size:.65rem">Kayıtlı</span>'
+          : '<span class="group-badge group-badge-warn" style="font-size:.65rem">Taslak</span>';
+        return `<div class="session-item" style="margin:3px 0;border-radius:7px;">
+          <div style="min-width:0">
+            <div style="font-weight:600;font-size:.85rem;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+              ${sBadge}
+              ${s.templateVersion > 1 ? `<span style="background:#dbeafe;color:#1e40af;padding:1px 5px;border-radius:8px;font-size:.65rem;font-weight:700">v${s.templateVersion}</span>` : ''}
+            </div>
+            <div class="session-meta">${esc(s.operator)} · ${date}</div>
+            ${s.note ? `<div class="session-meta">${esc(s.note)}</div>` : ''}
+          </div>
+          <div class="flex gap-2" style="align-items:center;flex-wrap:wrap;flex-shrink:0">
+            <button class="btn btn-ghost btn-sm" onclick="viewSession('${s.id}')">👁</button>
+            <button class="btn btn-warning btn-sm" onclick="editSession('${s.id}')">✏️</button>
+            <button class="btn btn-primary btn-sm" onclick="downloadPdf('${s.id}')">⬇</button>
+            <button class="btn btn-danger btn-sm" onclick="deleteSession('${s.id}')">🗑️</button>
+          </div>
+        </div>`;
+      }).join('');
+
+      // Boş şablon için "Doldur" butonu
+      const emptyRow = tStatus === 'empty' ? `
+        <div style="padding:8px 4px;display:flex;align-items:center;justify-content:space-between;gap:8px;">
+          <span style="color:var(--muted);font-size:.82rem;">Bu şablon için henüz kayıt yok.</span>
+          <button class="btn btn-primary btn-sm" onclick="startFillFromSession('${t.id}','${chassis||''}')">+ Doldur</button>
+        </div>` : '';
+
+      return `<div style="border-radius:8px;border:1.5px solid #e5e7eb;margin:5px 0;overflow:hidden;${tFonBg}">
+        <div style="display:flex;align-items:center;padding:9px 12px;cursor:pointer;user-select:none;gap:8px"
+             onclick="_groupOpen['${tKey}']=(_groupOpen['${tKey}']===false);renderSessions()">
+          <span style="font-size:.75rem;color:var(--muted);display:inline-block;transform:${isTOpen ? 'rotate(90deg)' : 'rotate(0deg)'};transition:transform .2s">▶</span>
+          <span style="font-weight:600;font-size:.88rem;flex:1;display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+            ${esc(t.name)}
+            ${t.version > 1 ? `<span style="background:#dbeafe;color:#1e40af;padding:1px 5px;border-radius:8px;font-size:.65rem;font-weight:700">v${t.version}</span>` : ''}
+            <span style="font-size:.72rem;color:var(--muted);font-weight:400">${tSessions.length} kayıt</span>
+            ${tBadge}
+          </span>
+        </div>
+        <div style="padding:0 8px 6px;display:${isTOpen ? '' : 'none'}">
+          ${sessionRows}${emptyRow}
+        </div>
+      </div>`;
+    }).join('');
+
+    return `<div class="group-card ${groupFon}" style="margin-bottom:14px;">
+      <div class="group-header" onclick="_groupOpen['${key}']=(_groupOpen['${key}']===false);renderSessions()">
+        <div class="group-title">
+          <span class="group-chevron ${isGroupOpen ? 'open' : ''}">▶</span>
+          <span>${esc(g.name)}</span>
+          ${chassisLabel}
+          <span style="font-size:.72rem;color:var(--muted);font-weight:400">${allGroupTemplates.length} şablon</span>
+          ${groupBadge}
+        </div>
+      </div>
+      <div class="group-body" style="display:${isGroupOpen ? '' : 'none'}">
+        ${tmplHtml}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+
+
+function _sessionItemHtml(s) {
+  return `<div class="session-item">
+    <div>
+      <div style="font-weight:600;font-size:.9rem;">${esc(s.templateName)}${s.templateVersion > 1 ? ` <span style="background:#dbeafe;color:#1e40af;padding:1px 5px;border-radius:8px;font-size:.7rem;font-weight:700">v${s.templateVersion}</span>` : ''}</div>
+      <div class="session-meta">${esc(s.operator)}${s.chassis ? ' · Şasi: ' + esc(s.chassis) : ''} · ${fmtDate(s.savedAt || s.startedAt)}</div>
+      ${s.note ? `<div class="session-meta">${esc(s.note)}</div>` : ''}
+    </div>
+    <div class="flex gap-2" style="align-items:center;flex-wrap:wrap;">
+      <span class="badge badge-${s.status}">${s.status === 'draft' ? 'Taslak' : 'Kayıtlı'}</span>
+      <button class="btn btn-ghost btn-sm" onclick="viewSession('${s.id}')">👁 Görüntüle</button>
+      <button class="btn btn-warning btn-sm" onclick="editSession('${s.id}')">✏️ Düzenle</button>
+      <button class="btn btn-primary btn-sm" onclick="downloadPdf('${s.id}')">⬇ PDF</button>
+      <button class="btn btn-danger btn-sm" onclick="deleteSession('${s.id}')">🗑️</button>
+    </div>
+  </div>`;
+}
+
+// ============================================================
+// ESC — HTML injection önleme
+// ============================================================
+function esc(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ============================================================
+// OPERATORS
+// ============================================================
+let editingOperatorId = null;
+
+function renderOperators() {
+  if (!state.operators) state.operators = [];
+  const list = document.getElementById('operators-list');
+  if (!list) return;
+  if (!state.operators.length) {
+    list.innerHTML = '<div class="empty-state"><div class="icon">👷</div><div>Henüz operatör eklenmedi.<br>Sağ üstten yeni operatör ekleyin.</div></div>';
+    return;
+  }
+  const sorted = [...state.operators].sort((a,b) => a.sicil.localeCompare(b.sicil));
+  list.innerHTML = sorted.map(o => `
+    <div class="list-item">
+      <div class="list-item-info">
+        <div class="list-item-name">[${esc(o.sicil)}] ${esc(o.name)} ${esc(o.surname)}</div>
+        <div class="list-item-meta">Sicil: ${esc(o.sicil)}</div>
+      </div>
+      <div class="list-item-actions">
+        <button class="btn btn-secondary btn-sm" onclick="openOperatorModal('${o.id}')">✏️</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteOperator('${o.id}')">🗑️</button>
+      </div>
+    </div>`).join('');
+}
+
+function openOperatorModal(id = null) {
+  editingOperatorId = id;
+  const modal = document.getElementById('operator-modal');
+  const title = document.getElementById('omodal-title');
+  document.getElementById('omodal-sicil').value = '';
+  document.getElementById('omodal-name').value = '';
+  document.getElementById('omodal-surname').value = '';
+  if (id) {
+    const o = state.operators.find(x => x.id === id);
+    title.textContent = 'Operatör Düzenle';
+    document.getElementById('omodal-sicil').value = o.sicil;
+    document.getElementById('omodal-name').value = o.name;
+    document.getElementById('omodal-surname').value = o.surname;
+  } else {
+    title.textContent = 'Yeni Operatör';
+  }
+  modal.classList.add('active');
+  document.getElementById('omodal-sicil').focus();
+}
+
+function closeOperatorModal() {
+  document.getElementById('operator-modal').classList.remove('active');
+  editingOperatorId = null;
+}
+
+function saveOperator() {
+  const sicil   = document.getElementById('omodal-sicil').value.trim();
+  const name    = document.getElementById('omodal-name').value.trim();
+  const surname = document.getElementById('omodal-surname').value.trim();
+  if (!sicil)   { toast('⚠️ Sicil numarası zorunlu!'); document.getElementById('omodal-sicil').focus(); return; }
+  if (!name)    { toast('⚠️ Ad zorunlu!');             document.getElementById('omodal-name').focus();  return; }
+  if (!surname) { toast('⚠️ Soyad zorunlu!');          document.getElementById('omodal-surname').focus(); return; }
+
+  const duplicate = state.operators.find(o => o.sicil === sicil && o.id !== editingOperatorId);
+  if (duplicate) { toast('⚠️ Bu sicil numarası zaten kayıtlı!'); document.getElementById('omodal-sicil').focus(); return; }
+
+  if (editingOperatorId) {
+    const o = state.operators.find(x => x.id === editingOperatorId);
+    o.sicil = sicil; o.name = name; o.surname = surname;
+    o.updatedAt = Date.now();
+    state.sessions.forEach(s => {
+      const ids = s.operatorIds || (s.operatorId ? [s.operatorId] : []);
+      if (ids.includes(editingOperatorId)) {
+        const ops = ids.map(oid => state.operators.find(x => x.id === oid)).filter(Boolean);
+        s.operator = ops.map(op => `[${op.sicil}] ${op.name} ${op.surname}`).join(', ');
+        s.operatorSicil = ops.map(op => op.sicil).join(', ');
+        sbUpsert('sessions', s.id, s).catch(() => {});
+      }
+    });
+  } else {
+    if (!state.operators) state.operators = [];
+    state.operators.push({ id: uid(), sicil, name, surname, createdAt: Date.now() });
+  }
+  closeOperatorModal();
+  const savedOp = editingOperatorId
+    ? state.operators.find(x => x.id === editingOperatorId)
+    : state.operators[state.operators.length - 1];
+  sbUpsert('operators', savedOp.id, savedOp).catch(e => toast('⚠️ Kayıt hatası: ' + e.message, 4000, 'error'));
+  renderOperators();
+  toast('✅ Operatör kaydedildi', 2800, 'success');
+}
+
+function deleteOperator(id) {
+  const o = state.operators.find(x => x.id === id);
+  const usedCount = state.sessions.filter(s => (s.operatorIds || [s.operatorId]).includes(id)).length;
+  if (usedCount > 0) {
+    if (!confirm(`⚠️ "${o.name} ${o.surname}" operatörü ${usedCount} kayıtta geçiyor.\n\nSilseniz bile mevcut kayıtlar korunur.\n\nYine de silmek istiyor musunuz?`)) return;
+  } else {
+    if (!confirm(`"${o.name} ${o.surname}" operatörünü silmek istediğinize emin misiniz?`)) return;
+  }
+  state.operators = state.operators.filter(x => x.id !== id);
+  sbDelete('operators', id).catch(e => toast('⚠️ Silme hatası: ' + e.message, 4000, 'error'));
+  renderOperators();
+  toast('🗑️ Operatör silindi');
+}
+
+// ============================================================
+// SESSIONS — Görüntüle / Düzenle / Sil / PDF
+// ============================================================
+function viewSession(id) {
+  const s = state.sessions.find(x => x.id === id);
+  if (!s) return;
+  const items = s.templateSnapshot || (state.templates.find(x => x.id === s.templateId) || {}).items || [];
+  const modal = document.getElementById('session-modal');
+  document.getElementById('smodal-title').textContent = s.templateName || 'Kayıt';
+  const labelMap = { ok: '✅ Uygun', nok: '❌ Uygun Değil', dev: '⚠️ Sapmalı Uygun' };
+  let itemNum = 0;
+  const rows = items.map(item => {
+    if (item.type === 'heading') {
+      return `<tr><td colspan="4" style="background:#0f2056;color:white;font-weight:700;padding:6px 10px;font-size:12px">📌 ${esc(item.text)}</td></tr>`;
+    }
+    itemNum++;
+    const r = (s.responses || {})[item.id] || {};
+    return `<tr>
+      <td>${itemNum}</td>
+      <td>${esc(item.text)}</td>
+      <td>${labelMap[r.value] || '—'}</td>
+      <td>${r.reason ? esc(r.reason) : '—'}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('smodal-body').innerHTML = `
+    <div style="background:#f5f7fc;border-radius:8px;padding:12px 14px;margin-bottom:12px;font-size:.82rem;display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;">
+      <div><b>Operatör:</b> ${esc(s.operator)}</div>
+      <div><b>Şasi No:</b> ${esc(s.chassis||'—')}</div>
+      <div><b>Müşteri:</b> ${esc(s.customer||'—')}</div>
+      <div><b>Sipariş No:</b> ${esc(s.order||'—')}</div>
+      <div><b>İstasyon:</b> ${esc(s.location||'—')}</div>
+      <div><b>Tarih:</b> ${fmtDate(s.savedAt || s.startedAt)}</div>
+      <div><b>Durum:</b> ${s.status === 'draft' ? 'Taslak' : 'Kayıtlı'}</div>
+      ${s.note ? `<div style="grid-column:1/-1"><b>Not:</b> ${esc(s.note)}</div>` : ''}
+    </div>
+    <table class="preview-table">
+      <thead><tr><th>#</th><th>Madde</th><th>Sonuç</th><th>Açıklama</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+  document.getElementById('smodal-download-btn').onclick = () => { downloadPdf(id); closeSessionModal(); };
+  document.getElementById('smodal-edit-btn').onclick     = () => { closeSessionModal(); editSession(id); };
+  modal.classList.add('active');
+}
+
+function closeSessionModal() {
+  document.getElementById('session-modal').classList.remove('active');
+}
+
+function editSession(id) {
+  const s = state.sessions.find(x => x.id === id);
+  if (!s) return;
+  const template = state.templates.find(x => x.id === s.templateId);
+  if (!template) { toast('⚠️ Şablon bulunamadı', 3000, 'error'); return; }
+  showPage('fill');
+  const groupSel = document.getElementById('fill-group-select');
+  if (groupSel) { groupSel.value = template.groupId || ''; groupSel.dispatchEvent(new Event('change')); }
+  setTimeout(() => {
+    const tmplSel = document.getElementById('fill-template-select');
+    if (tmplSel) tmplSel.value = s.templateId;
+    const chassisEl = document.getElementById('fill-chassis');
+    if (chassisEl) chassisEl.value = s.chassis || '';
+    const customerEl = document.getElementById('fill-customer');
+    if (customerEl) customerEl.value = s.customer || '';
+    const orderEl = document.getElementById('fill-order');
+    if (orderEl) orderEl.value = s.order || '';
+    const locationEl = document.getElementById('fill-location');
+    if (locationEl) locationEl.value = s.location || '';
+    const noteEl = document.getElementById('fill-note');
+    if (noteEl) noteEl.value = s.note || '';
+    _editingSessionId = id;
+    // Operatörleri seç
+    selectedOperatorIds = [...(s.operatorIds || (s.operatorId ? [s.operatorId] : []))];
+    renderOperatorChips();
+    toast('✏️ Bilgileri güncelleyip "Başla →" butonuna basın', 3500, 'info');
+  }, 150);
+}
+
+function deleteSession(id) {
+  if (!confirm('Bu kaydı silmek istediğinizden emin misiniz?')) return;
+  state.sessions = state.sessions.filter(s => s.id !== id);
+  sbDelete('sessions', id).catch(e => toast('⚠️ Silme hatası: ' + e.message, 4000, 'error'));
+  renderSessions();
+  toast('🗑️ Kayıt silindi');
+}
+
+// ============================================================
+// PDF — buildPdfData + downloadPdf
+// ============================================================
+function buildPdfData(id) {
+  const s = state.sessions.find(x => x.id === id);
+  const tItems = s.templateSnapshot || null;
+  const template = tItems
+    ? { ...( state.templates.find(x => x.id === s.templateId) || {} ), items: tItems }
+    : state.templates.find(x => x.id === s.templateId);
+  return { s, template };
+}
+
+function downloadPdf(id) {
+  const { s, template } = buildPdfData(id);
+  if (!template) { toast('⚠️ Şablon bulunamadı', 3000, 'error'); return; }
+
+  const statusLabel = s.status === 'final' ? 'Kayıtlı' : 'Taslak';
+  const statusColor = s.status === 'final' ? '#065f46' : '#92400e';
+  const statusBg    = s.status === 'final' ? '#d1fae5' : '#fef3c7';
+  const labelMap = {
+    ok:  { text: 'Uygun',         color: '#065f46', bg: '#d1fae5' },
+    nok: { text: 'Uygun Değil',   color: '#991b1b', bg: '#fee2e2' },
+    dev: { text: 'Sapmalı Uygun', color: '#92400e', bg: '#fef3c7' },
+  };
+  const mrow = (label, value) =>
+    `<div style="display:flex;gap:4px"><span style="font-weight:700;color:#374151;min-width:90px">${label}:</span><span style="color:#1f2937">${esc(value||'—')}</span></div>`;
+
+  let pdfItemNum = 0;
+  const rows = template.items.map(item => {
+    if (item.type === 'heading') {
+      return `<tr><td colspan="4" style="padding:8px 10px;border:1px solid #dde3ef;background:linear-gradient(135deg,#0f2056,#1a3a7a);color:white;font-weight:700;font-size:11px;letter-spacing:.3px;">📌 ${esc(item.text)}</td></tr>`;
+    }
+    pdfItemNum++;
+    const r  = (s.responses || {})[item.id] || {};
+    const lm = labelMap[r.value] || { text: '—', color: '#6b7280', bg: '#f3f4f6' };
+    const bg = pdfItemNum % 2 === 0 ? '#f8fafc' : '#ffffff';
+    return `<tr style="background:${bg}">
+      <td style="padding:7px 8px;border:1px solid #dde3ef;text-align:center;color:#6b7280;font-size:11px">${pdfItemNum}</td>
+      <td style="padding:7px 8px;border:1px solid #dde3ef;font-size:11px">${esc(item.text)}</td>
+      <td style="padding:7px 8px;border:1px solid #dde3ef;text-align:center">
+        <span style="background:${lm.bg};color:${lm.color};padding:2px 7px;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap">${lm.text}</span>
+      </td>
+      <td style="padding:7px 8px;border:1px solid #dde3ef;font-size:11px;color:#374151">${r.reason ? esc(r.reason) : '—'}</td>
+    </tr>`;
+  }).join('');
+
+  const html = `<!DOCTYPE html>
+<html lang="tr"><head>
+<meta charset="UTF-8">
+<title>Kalite Kontrol Belgesi</title>
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: white; }
+.page { width: 210mm; min-height: 297mm; padding-bottom: 14mm; }
+.hdr { background: #0f2056; color: white; padding: 14px 20px 12px; }
+.hdr-title { font-size: 15px; font-weight: 800; letter-spacing: .4px; }
+.hdr-sub   { font-size: 11px; opacity: .85; margin-top: 3px; }
+.hdr-date  { font-size: 10px; opacity: .6; margin-top: 2px; }
+.accent    { height: 3px; background: #2962aa; }
+.meta      { margin: 14px 15mm; background: #f5f7fc; border: 1px solid #d0d9ee;
+             border-radius: 6px; padding: 12px 16px;
+             display: grid; grid-template-columns: 1fr 1fr; gap: 7px 24px; font-size: 11px; }
+.tbl       { margin: 12px 15mm 0; }
+table      { width: 100%; border-collapse: collapse; }
+thead tr   { background: #0f2056; color: white; }
+thead th   { padding: 7px 8px; font-size: 11px; font-weight: 700; text-align: left; border: 1px solid #0a1840; }
+thead th:first-child { width: 28px; text-align: center; }
+thead th:nth-child(3){ width: 96px; text-align: center; }
+thead th:last-child  { width: 90px; }
+.ftr { position: fixed; bottom: 0; left: 0; right: 0; height: 10mm;
+       background: #0f2056; color: rgba(255,255,255,.7);
+       display: flex; align-items: center; justify-content: space-between;
+       padding: 0 20px; font-size: 9px; }
+tr { page-break-inside: avoid; }
+@media print { .no-print { display: none; } }
+</style>
+</head><body>
+<div class="page">
+  <div class="hdr">
+    <div class="hdr-title">KALİTE KONTROL BELGESİ</div>
+    <div class="hdr-sub">${esc(s.templateName)} ${s.templateVersion ? '· v' + s.templateVersion : ''}</div>
+    <div class="hdr-date">${fmtDate(s.savedAt || s.startedAt)}</div>
+  </div>
+  <div class="accent"></div>
+  <div class="meta">
+    ${mrow('Operatör', s.operator)}
+    ${mrow('Şasi No', s.chassis)}
+    ${mrow('Müşteri', s.customer)}
+    ${mrow('Sipariş No', s.order)}
+    ${mrow('İstasyon', s.location)}
+    <div style="display:flex;gap:4px;align-items:center">
+      <span style="font-weight:700;color:#374151;min-width:90px">Durum:</span>
+      <span style="background:${statusBg};color:${statusColor};padding:1px 8px;border-radius:4px;font-weight:700;font-size:10px">${statusLabel}</span>
+    </div>
+    ${s.note ? '<div style="grid-column:1/-1">' + mrow('Not', s.note) + '</div>' : ''}
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>#</th><th>Kontrol Maddesi</th><th style="text-align:center">Sonuç</th><th>Açıklama</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>
+</div>
+<div class="ftr">
+  <span>Kalite Kontrol Sistemi — Otomatik Oluşturulan Belge</span>
+  <span>${esc(s.operator)} · ${esc(s.chassis||'')}</span>
+</div>
+<div class="no-print" style="position:fixed;top:10px;right:10px">
+  <button onclick="window.print()" style="background:#0f2056;color:white;border:none;padding:8px 16px;border-radius:6px;cursor:pointer;font-size:13px">🖨️ PDF Olarak Kaydet</button>
+</div>
+<script>window.onload = function(){ window.print(); };<\/script>
+</body></html>`;
+
+  const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+  const url  = URL.createObjectURL(blob);
+  const win  = window.open(url, '_blank');
+  if (!win) { toast('⚠️ Pop-up engellendi. Tarayıcıda pop-up izni verin.', 4000, 'error'); return; }
+  setTimeout(() => URL.revokeObjectURL(url), 60000);
+  toast('📄 PDF penceresi açıldı', 2800, 'success');
+}
+
+// ============================================================
+// INIT — DOMContentLoaded
+// ============================================================
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Nav butonları
+  document.querySelectorAll('.nav-btn[data-page]').forEach(btn => {
+    btn.addEventListener('click', () => showPage(btn.dataset.page));
+  });
+
+  // Hamburger menü
+  const hamburger = document.getElementById('hamburger-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', () => mobileNav.classList.toggle('open'));
+    mobileNav.querySelectorAll('.nav-btn').forEach(btn => {
+      btn.addEventListener('click', () => mobileNav.classList.remove('open'));
+    });
+  }
+
+  // Template modal
+  document.getElementById('tmodal-name')?.addEventListener('keydown', e => {
+    if (e.key === 'Enter') saveTemplate();
+  });
+
+  // Group modal enter
+  document.getElementById('gmodal-name')?.addEventListener('keydown', e => {
+    if (e.key === 'Enter') saveGroup();
+  });
+
+  // Operator modal enter
+  document.getElementById('omodal-name')?.addEventListener('keydown', e => {
+    if (e.key === 'Enter') saveOperator();
+  });
+
+  // Session search
+  document.getElementById('session-search-input')?.addEventListener('input', () => renderSessions());
+
+  // Operator dropdown dışına tıklayınca kapat
+  initOperatorDropdownClose();
+
+  // Scroll butonları
+  window.addEventListener('scroll', () => {
+    const btns = document.getElementById('scroll-btns');
+    if (btns) {
+      if (window.scrollY > 150) btns.classList.add('visible');
+      else btns.classList.remove('visible');
+    }
+  }, { passive: true });
+
+  // Veriyi yükle
+  loadState().then(() => {
+    showPage('dashboard');
+    renderDashboard();
+    renderTemplates();
+    renderOperators();
+    renderFillSelect();
+    renderSessions();
+  });
+});
+
+</script>
+</body>
+</html>
